@@ -1,3 +1,7 @@
 README.md
 
 *.json
+.env
+/data/
+
+notes.txt
