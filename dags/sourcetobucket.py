@@ -15,8 +15,8 @@ def source_to_gcs():
 
     upload_file = LocalFilesystemToGCSOperator(
         task_id="upload_file_gcs",
-        src='/home/hariatde_gmail_com/project-used-cars/Used-Car-Price-data-analysiss/data/raw/test.txt',
-        dst='gs://used-car-price-analysis/test.txt',
+        src='data/hello.txt', ## Change
+        dst='data/raw/compressed/raw/hello.txt', 
         bucket='used-car-price-analysis',
         gcp_conn_id='gcp_airflow_conn'
     )
