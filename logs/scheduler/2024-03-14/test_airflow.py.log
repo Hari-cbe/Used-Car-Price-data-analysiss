@@ -864,3 +864,17 @@ SyntaxError: invalid syntax
 [2024-03-14T02:42:05.954+0000] {logging_mixin.py:188} INFO - [2024-03-14T02:42:05.954+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2024-03-14T02:42:06.000+0000] {logging_mixin.py:188} INFO - [2024-03-14T02:42:06.000+0000] {dag.py:3834} INFO - Setting next_dagrun for test_airflow to 2024-03-14 00:00:00+00:00, run_after=2024-03-15 00:00:00+00:00
 [2024-03-14T02:42:06.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_airflow.py took 0.227 seconds
+[2024-03-14T02:42:36.092+0000] {processor.py:161} INFO - Started process (PID=884) to work on /opt/airflow/dags/test_airflow.py
+[2024-03-14T02:42:36.095+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_airflow.py for tasks to queue
+[2024-03-14T02:42:36.100+0000] {logging_mixin.py:188} INFO - [2024-03-14T02:42:36.099+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_airflow.py
+[2024-03-14T02:42:36.144+0000] {processor.py:840} INFO - DAG(s) 'test_airflow' retrieved from /opt/airflow/dags/test_airflow.py
+[2024-03-14T02:42:36.217+0000] {logging_mixin.py:188} INFO - [2024-03-14T02:42:36.216+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-14T02:42:36.254+0000] {logging_mixin.py:188} INFO - [2024-03-14T02:42:36.253+0000] {dag.py:3834} INFO - Setting next_dagrun for test_airflow to 2024-03-14 00:00:00+00:00, run_after=2024-03-15 00:00:00+00:00
+[2024-03-14T02:42:36.281+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_airflow.py took 0.200 seconds
+[2024-03-14T02:43:06.406+0000] {processor.py:161} INFO - Started process (PID=891) to work on /opt/airflow/dags/test_airflow.py
+[2024-03-14T02:43:06.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_airflow.py for tasks to queue
+[2024-03-14T02:43:06.426+0000] {logging_mixin.py:188} INFO - [2024-03-14T02:43:06.425+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_airflow.py
+[2024-03-14T02:43:06.455+0000] {processor.py:840} INFO - DAG(s) 'test_airflow' retrieved from /opt/airflow/dags/test_airflow.py
+[2024-03-14T02:43:06.837+0000] {logging_mixin.py:188} INFO - [2024-03-14T02:43:06.836+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-14T02:43:07.076+0000] {logging_mixin.py:188} INFO - [2024-03-14T02:43:07.072+0000] {dag.py:3834} INFO - Setting next_dagrun for test_airflow to 2024-03-14 00:00:00+00:00, run_after=2024-03-15 00:00:00+00:00
+[2024-03-14T02:43:07.217+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_airflow.py took 0.819 seconds
