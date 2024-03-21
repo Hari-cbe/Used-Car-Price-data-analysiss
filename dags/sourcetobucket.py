@@ -1,12 +1,15 @@
 from airflow.decorators import dag, task 
 import pendulum
 import os
+
+# Opearatos and provides for gcp 
 from airflow.providers.google.cloud.transfers.local_to_gcs import LocalFilesystemToGCSOperator
 from airflow.providers.google.cloud.sensors.gcs import GCSObjectExistenceSensor
 from airflow.providers.google.cloud.transfers.gcs_to_bigquery import GCSToBigQueryOperator
 from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateEmptyTableOperator
 
 
+# Change this value for your use 
 BUCKET = 'used-car-price-analysis'
 GCP_CONN_ID = 'gcp_airflow_conn'
 DATASET_NAME = "used_car_analysis_dataset"
