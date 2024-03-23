@@ -1,0 +1,16 @@
+[2024-03-23T09:26:27.525+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.create_BQ_table_car_price manual__2024-03-23T09:25:44.380208+00:00 [queued]>
+[2024-03-23T09:26:27.569+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.create_BQ_table_car_price manual__2024-03-23T09:25:44.380208+00:00 [queued]>
+[2024-03-23T09:26:27.570+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-23T09:26:27.621+0000] {taskinstance.py:2217} INFO - Executing <Task(BigQueryCreateEmptyTableOperator): create_BQ_table_car_price> on 2024-03-23 09:25:44.380208+00:00
+[2024-03-23T09:26:27.641+0000] {standard_task_runner.py:60} INFO - Started process 3456 to run task
+[2024-03-23T09:26:27.670+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'create_BQ_table_car_price', 'manual__2024-03-23T09:25:44.380208+00:00', '--job-id', '272', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmp37jk3j28']
+[2024-03-23T09:26:27.692+0000] {standard_task_runner.py:88} INFO - Job 272: Subtask create_BQ_table_car_price
+[2024-03-23T09:26:27.850+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.create_BQ_table_car_price manual__2024-03-23T09:25:44.380208+00:00 [running]> on host ceb99a37e23c
+[2024-03-23T09:26:28.178+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='create_BQ_table_car_price' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T09:25:44.380208+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-23T09:25:44.380208+00:00'
+[2024-03-23T09:26:28.234+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-23T09:26:28.242+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-23T09:26:28.248+0000] {bigquery.py:1516} INFO - Creating table
+[2024-03-23T09:26:29.117+0000] {taskinstance.py:2386} INFO - Table used_car_analysis_dataset.used_car_price already exists.
+[2024-03-23T09:26:29.154+0000] {taskinstance.py:1149} INFO - Marking task as SKIPPED. dag_id=source_to_gcs, task_id=create_BQ_table_car_price, execution_date=20240323T092544, start_date=20240323T092627, end_date=20240323T092629
+[2024-03-23T09:26:29.235+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-23T09:26:29.378+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,32 @@
+[2024-03-23T09:58:14.990+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.insert_data_bigQuery_car_price manual__2024-03-23T09:57:30.021098+00:00 [queued]>
+[2024-03-23T09:58:15.010+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.insert_data_bigQuery_car_price manual__2024-03-23T09:57:30.021098+00:00 [queued]>
+[2024-03-23T09:58:15.010+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-23T09:58:15.036+0000] {taskinstance.py:2217} INFO - Executing <Task(GCSToBigQueryOperator): insert_data_bigQuery_car_price> on 2024-03-23 09:57:30.021098+00:00
+[2024-03-23T09:58:15.047+0000] {standard_task_runner.py:60} INFO - Started process 4003 to run task
+[2024-03-23T09:58:15.055+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'insert_data_bigQuery_car_price', 'manual__2024-03-23T09:57:30.021098+00:00', '--job-id', '309', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmp72w9cn18']
+[2024-03-23T09:58:15.059+0000] {standard_task_runner.py:88} INFO - Job 309: Subtask insert_data_bigQuery_car_price
+[2024-03-23T09:58:15.138+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.insert_data_bigQuery_car_price manual__2024-03-23T09:57:30.021098+00:00 [running]> on host ceb99a37e23c
+[2024-03-23T09:58:15.292+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='insert_data_bigQuery_car_price' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T09:57:30.021098+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-23T09:57:30.021098+00:00'
+[2024-03-23T09:58:15.314+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-23T09:58:15.318+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-23T09:58:15.320+0000] {gcs_to_bigquery.py:379} INFO - Using existing BigQuery table for storing data...
+[2024-03-23T09:58:15.382+0000] {bigquery.py:2328} INFO - Project is not included in destination_project_dataset_table: used_car_analysis_dataset.used_car_price; using project "used-car-analysis"
+[2024-03-23T09:58:15.383+0000] {gcs_to_bigquery.py:383} INFO - Executing: {'load': {'autodetect': True, 'createDisposition': 'CREATE_IF_NEEDED', 'destinationTable': {'projectId': 'used-car-analysis', 'datasetId': 'used_car_analysis_dataset', 'tableId': 'used_car_price'}, 'sourceFormat': 'CSV', 'sourceUris': ['gs://used-car-price-analysis/data/raw/car_sales.csv'], 'writeDisposition': 'WRITE_EMPTY', 'ignoreUnknownValues': False, 'skipLeadingRows': None, 'fieldDelimiter': ',', 'quote': None, 'allowQuotedNewlines': False, 'encoding': 'UTF-8'}}
+[2024-03-23T09:58:15.385+0000] {bigquery.py:1613} INFO - Inserting job ***_source_to_gcs_insert_data_bigQuery_car_price_2024_03_23T09_57_30_021098_00_00_e2e105402ab59081d85bcea40960ed9e
+[2024-03-23T09:58:15.848+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/gcs_to_bigquery.py", line 444, in execute
+    job.result(timeout=self.result_timeout, retry=self.result_retry)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.Conflict: 409 Already Exists: Table used-car-analysis:used_car_analysis_dataset.used_car_price; reason: duplicate, message: Already Exists: Table used-car-analysis:used_car_analysis_dataset.used_car_price
+[2024-03-23T09:58:15.935+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=source_to_gcs, task_id=insert_data_bigQuery_car_price, execution_date=20240323T095730, start_date=20240323T095814, end_date=20240323T095815
+[2024-03-23T09:58:15.957+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 309 for task insert_data_bigQuery_car_price (409 Already Exists: Table used-car-analysis:used_car_analysis_dataset.used_car_price; reason: duplicate, message: Already Exists: Table used-car-analysis:used_car_analysis_dataset.used_car_price; 4003)
+[2024-03-23T09:58:15.994+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-23T09:58:16.059+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

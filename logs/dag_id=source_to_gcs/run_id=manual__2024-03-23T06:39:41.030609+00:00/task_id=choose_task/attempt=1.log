@@ -1,0 +1,32 @@
+[2024-03-23T06:40:18.793+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.choose_task manual__2024-03-23T06:39:41.030609+00:00 [queued]>
+[2024-03-23T06:40:18.811+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.choose_task manual__2024-03-23T06:39:41.030609+00:00 [queued]>
+[2024-03-23T06:40:18.812+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-23T06:40:18.837+0000] {taskinstance.py:2217} INFO - Executing <Task(_BranchPythonDecoratedOperator): choose_task> on 2024-03-23 06:39:41.030609+00:00
+[2024-03-23T06:40:18.852+0000] {standard_task_runner.py:60} INFO - Started process 1030 to run task
+[2024-03-23T06:40:18.861+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'choose_task', 'manual__2024-03-23T06:39:41.030609+00:00', '--job-id', '228', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmp341s5_du']
+[2024-03-23T06:40:18.867+0000] {standard_task_runner.py:88} INFO - Job 228: Subtask choose_task
+[2024-03-23T06:40:18.956+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.choose_task manual__2024-03-23T06:39:41.030609+00:00 [running]> on host ceb99a37e23c
+[2024-03-23T06:40:19.108+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='choose_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T06:39:41.030609+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-23T06:39:41.030609+00:00'
+[2024-03-23T06:40:19.113+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/base.py", line 241, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 234, in execute
+    return self.do_branch(context, super().execute(context))
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/sourcetobucket.py", line 80, in choose_task
+    result = ti.xcom_pull(task_id="get_check_result")
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+TypeError: xcom_pull() got an unexpected keyword argument 'task_id'
+[2024-03-23T06:40:19.175+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=source_to_gcs, task_id=choose_task, execution_date=20240323T063941, start_date=20240323T064018, end_date=20240323T064019
+[2024-03-23T06:40:19.205+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 228 for task choose_task (xcom_pull() got an unexpected keyword argument 'task_id'; 1030)
+[2024-03-23T06:40:19.239+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-23T06:40:19.293+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

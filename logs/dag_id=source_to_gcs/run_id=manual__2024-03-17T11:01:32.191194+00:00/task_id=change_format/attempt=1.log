@@ -1,0 +1,30 @@
+[2024-03-17T11:01:34.625+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.change_format manual__2024-03-17T11:01:32.191194+00:00 [queued]>
+[2024-03-17T11:01:34.655+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.change_format manual__2024-03-17T11:01:32.191194+00:00 [queued]>
+[2024-03-17T11:01:34.656+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-17T11:01:34.707+0000] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): change_format> on 2024-03-17 11:01:32.191194+00:00
+[2024-03-17T11:01:34.730+0000] {standard_task_runner.py:60} INFO - Started process 310 to run task
+[2024-03-17T11:01:34.759+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'change_format', 'manual__2024-03-17T11:01:32.191194+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpoa1r130y']
+[2024-03-17T11:01:34.776+0000] {standard_task_runner.py:88} INFO - Job 47: Subtask change_format
+[2024-03-17T11:01:35.207+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.change_format manual__2024-03-17T11:01:32.191194+00:00 [running]> on host 484fbc655ee6
+[2024-03-17T11:01:35.661+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='change_format' AIRFLOW_CTX_EXECUTION_DATE='2024-03-17T11:01:32.191194+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-17T11:01:32.191194+00:00'
+[2024-03-17T11:01:41.950+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/base.py", line 241, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/sourcetobucket.py", line 31, in change_format
+    df.write_csv('data/uncompressed/car_sales.csv')
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/generic.py", line 5989, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'write_csv'
+[2024-03-17T11:01:42.035+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=source_to_gcs, task_id=change_format, execution_date=20240317T110132, start_date=20240317T110134, end_date=20240317T110142
+[2024-03-17T11:01:42.062+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 47 for task change_format ('DataFrame' object has no attribute 'write_csv'; 310)
+[2024-03-17T11:01:42.115+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-17T11:01:42.143+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

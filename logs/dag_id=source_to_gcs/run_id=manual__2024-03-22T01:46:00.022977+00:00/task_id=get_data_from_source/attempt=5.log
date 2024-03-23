@@ -1,0 +1,15 @@
+[2024-03-22T01:52:14.968+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.get_data_from_source manual__2024-03-22T01:46:00.022977+00:00 [queued]>
+[2024-03-22T01:52:14.986+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.get_data_from_source manual__2024-03-22T01:46:00.022977+00:00 [queued]>
+[2024-03-22T01:52:14.987+0000] {taskinstance.py:2193} INFO - Starting attempt 5 of 5
+[2024-03-22T01:52:15.020+0000] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): get_data_from_source> on 2024-03-22 01:46:00.022977+00:00
+[2024-03-22T01:52:15.030+0000] {standard_task_runner.py:60} INFO - Started process 689 to run task
+[2024-03-22T01:52:15.044+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'get_data_from_source', 'manual__2024-03-22T01:46:00.022977+00:00', '--job-id', '139', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpkd0t9vqb']
+[2024-03-22T01:52:15.050+0000] {standard_task_runner.py:88} INFO - Job 139: Subtask get_data_from_source
+[2024-03-22T01:52:15.160+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.get_data_from_source manual__2024-03-22T01:46:00.022977+00:00 [running]> on host 2d773125f5e6
+[2024-03-22T01:52:15.410+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='get_data_from_source' AIRFLOW_CTX_EXECUTION_DATE='2024-03-22T01:46:00.022977+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-22T01:46:00.022977+00:00'
+[2024-03-22T01:52:15.668+0000] {logging_mixin.py:188} INFO - car_price_data.csv file downloaded successfully
+[2024-03-22T01:52:15.897+0000] {logging_mixin.py:188} INFO - state_abb_data.csv file downloaded successfully
+[2024-03-22T01:52:15.902+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-22T01:52:15.924+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=source_to_gcs, task_id=get_data_from_source, execution_date=20240322T014600, start_date=20240322T015214, end_date=20240322T015215
+[2024-03-22T01:52:15.994+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-22T01:52:16.037+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

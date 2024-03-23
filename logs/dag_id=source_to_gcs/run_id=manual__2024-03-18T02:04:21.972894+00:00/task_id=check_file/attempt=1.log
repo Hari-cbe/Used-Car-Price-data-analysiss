@@ -1,0 +1,36 @@
+[2024-03-18T02:04:28.962+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.check_file manual__2024-03-18T02:04:21.972894+00:00 [queued]>
+[2024-03-18T02:04:28.984+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.check_file manual__2024-03-18T02:04:21.972894+00:00 [queued]>
+[2024-03-18T02:04:28.984+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-18T02:04:29.018+0000] {taskinstance.py:2217} INFO - Executing <Task(GCSObjectExistenceSensor): check_file> on 2024-03-18 02:04:21.972894+00:00
+[2024-03-18T02:04:29.030+0000] {standard_task_runner.py:60} INFO - Started process 13157 to run task
+[2024-03-18T02:04:29.044+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'check_file', 'manual__2024-03-18T02:04:21.972894+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmphule4e1o']
+[2024-03-18T02:04:29.050+0000] {standard_task_runner.py:88} INFO - Job 68: Subtask check_file
+[2024-03-18T02:04:29.157+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.check_file manual__2024-03-18T02:04:21.972894+00:00 [running]> on host 484fbc655ee6
+[2024-03-18T02:04:29.375+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='check_file' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T02:04:21.972894+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-18T02:04:21.972894+00:00'
+[2024-03-18T02:04:29.378+0000] {gcs.py:98} INFO - Sensor checks existence of : used-car-price-analysis, data/raw/car_salsses.csv
+[2024-03-18T02:04:29.408+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-18T02:04:29.412+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-18T02:05:29.890+0000] {gcs.py:98} INFO - Sensor checks existence of : used-car-price-analysis, data/raw/car_salsses.csv
+[2024-03-18T02:05:29.904+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-18T02:05:29.906+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-18T02:06:30.294+0000] {gcs.py:98} INFO - Sensor checks existence of : used-car-price-analysis, data/raw/car_salsses.csv
+[2024-03-18T02:06:30.320+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-18T02:06:30.323+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-18T02:07:30.606+0000] {gcs.py:98} INFO - Sensor checks existence of : used-car-price-analysis, data/raw/car_salsses.csv
+[2024-03-18T02:07:30.619+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-18T02:07:30.620+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-18T02:07:30.963+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/sensors/gcs.py", line 112, in execute
+    super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/base.py", line 282, in execute
+    raise AirflowSensorTimeout(message)
+airflow.exceptions.AirflowSensorTimeout: Sensor has timed out; run duration of 181.5845705459942 seconds exceeds the specified timeout of 180.0.
+[2024-03-18T02:07:30.980+0000] {taskinstance.py:1149} INFO - Immediate failure requested. Marking task as FAILED. dag_id=source_to_gcs, task_id=check_file, execution_date=20240318T020421, start_date=20240318T020428, end_date=20240318T020730
+[2024-03-18T02:07:30.999+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 68 for task check_file (Sensor has timed out; run duration of 181.5845705459942 seconds exceeds the specified timeout of 180.0.; 13157)
+[2024-03-18T02:07:31.054+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-18T02:07:31.098+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

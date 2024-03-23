@@ -1,0 +1,42 @@
+[2024-03-15T13:54:21.121+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.upload_file_gcs manual__2024-03-15T13:30:07.855533+00:00 [queued]>
+[2024-03-15T13:54:21.142+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.upload_file_gcs manual__2024-03-15T13:30:07.855533+00:00 [queued]>
+[2024-03-15T13:54:21.143+0000] {taskinstance.py:2193} INFO - Starting attempt 4 of 4
+[2024-03-15T13:54:21.179+0000] {taskinstance.py:2217} INFO - Executing <Task(LocalFilesystemToGCSOperator): upload_file_gcs> on 2024-03-15 13:30:07.855533+00:00
+[2024-03-15T13:54:21.190+0000] {standard_task_runner.py:60} INFO - Started process 523 to run task
+[2024-03-15T13:54:21.211+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'upload_file_gcs', 'manual__2024-03-15T13:30:07.855533+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpp4lnflno']
+[2024-03-15T13:54:21.220+0000] {standard_task_runner.py:88} INFO - Job 26: Subtask upload_file_gcs
+[2024-03-15T13:54:21.360+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.upload_file_gcs manual__2024-03-15T13:30:07.855533+00:00 [running]> on host 693aecab9d7c
+[2024-03-15T13:54:21.542+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='upload_file_gcs' AIRFLOW_CTX_EXECUTION_DATE='2024-03-15T13:30:07.855533+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-15T13:30:07.855533+00:00'
+[2024-03-15T13:54:21.575+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-15T13:54:21.578+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-15T13:54:21.580+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/local_to_gcs.py", line 110, in execute
+    hook.upload(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 525, in upload
+    client = self.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 168, in get_conn
+    credentials=self.get_credentials(), client_info=CLIENT_INFO, project=self.project_id
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 307, in get_credentials
+    credentials, _ = self.get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 284, in get_credentials_and_project_id
+    credentials, project_id = get_credentials_and_project_id(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 362, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 235, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_key_path()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 286, in _get_credentials_using_key_path
+    credentials = google.oauth2.service_account.Credentials.from_service_account_file(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/service_account.py", line 258, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/hariatde_gmail_com/project-used-cars/Used-Car-Price-data-analysiss/used-car-analysis-575ada66b6d1.json'
+[2024-03-15T13:54:21.691+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=source_to_gcs, task_id=upload_file_gcs, execution_date=20240315T133007, start_date=20240315T135421, end_date=20240315T135421
+[2024-03-15T13:54:21.717+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 26 for task upload_file_gcs ([Errno 2] No such file or directory: '/home/hariatde_gmail_com/project-used-cars/Used-Car-Price-data-analysiss/used-car-analysis-575ada66b6d1.json'; 523)
+[2024-03-15T13:54:21.757+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-15T13:54:21.821+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

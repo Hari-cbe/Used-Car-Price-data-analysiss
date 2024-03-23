@@ -1,0 +1,43 @@
+[2024-03-19T02:07:11.412+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.create_BQ_table manual__2024-03-19T01:47:33.877964+00:00 [queued]>
+[2024-03-19T02:07:11.434+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.create_BQ_table manual__2024-03-19T01:47:33.877964+00:00 [queued]>
+[2024-03-19T02:07:11.435+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-19T02:07:11.460+0000] {taskinstance.py:2217} INFO - Executing <Task(BigQueryCreateEmptyTableOperator): create_BQ_table> on 2024-03-19 01:47:33.877964+00:00
+[2024-03-19T02:07:11.473+0000] {standard_task_runner.py:60} INFO - Started process 688 to run task
+[2024-03-19T02:07:11.484+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'create_BQ_table', 'manual__2024-03-19T01:47:33.877964+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpewtplmh_']
+[2024-03-19T02:07:11.490+0000] {standard_task_runner.py:88} INFO - Job 92: Subtask create_BQ_table
+[2024-03-19T02:07:11.564+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.create_BQ_table manual__2024-03-19T01:47:33.877964+00:00 [running]> on host 484fbc655ee6
+[2024-03-19T02:07:11.692+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='create_BQ_table' AIRFLOW_CTX_EXECUTION_DATE='2024-03-19T01:47:33.877964+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-19T01:47:33.877964+00:00'
+[2024-03-19T02:07:11.714+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-19T02:07:11.716+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-19T02:07:11.717+0000] {bigquery.py:1516} INFO - Creating table
+[2024-03-19T02:07:12.009+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 1517, in execute
+    table = bq_hook.create_empty_table(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 485, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 422, in create_empty_table
+    return self.get_client(project_id=project_id, location=location).create_table(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 797, in create_table
+    api_response = self._call_api(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 831, in _call_api
+    return call()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry/retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry/retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry/retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/retry/retry_unary.py", line 144, in retry_target
+    result = target()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/_http/__init__.py", line 494, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.BadRequest: 400 POST https://bigquery.googleapis.com/bigquery/v2/projects/used-car-analysis/datasets/used-car-analysis/tables?prettyPrint=false: Invalid dataset ID "used-car-analysis". Dataset IDs must be alphanumeric (plus underscores) and must be at most 1024 characters long.
+[2024-03-19T02:07:12.024+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=source_to_gcs, task_id=create_BQ_table, execution_date=20240319T014733, start_date=20240319T020711, end_date=20240319T020712
+[2024-03-19T02:07:12.044+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 92 for task create_BQ_table (400 POST https://bigquery.googleapis.com/bigquery/v2/projects/used-car-analysis/datasets/used-car-analysis/tables?prettyPrint=false: Invalid dataset ID "used-car-analysis". Dataset IDs must be alphanumeric (plus underscores) and must be at most 1024 characters long.; 688)
+[2024-03-19T02:07:12.065+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-19T02:07:12.099+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

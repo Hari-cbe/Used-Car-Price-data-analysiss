@@ -1,0 +1,24 @@
+[2024-03-15T14:46:15.844+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.upload_file_gcs manual__2024-03-15T14:46:11.956678+00:00 [queued]>
+[2024-03-15T14:46:15.859+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.upload_file_gcs manual__2024-03-15T14:46:11.956678+00:00 [queued]>
+[2024-03-15T14:46:15.860+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-15T14:46:15.885+0000] {taskinstance.py:2217} INFO - Executing <Task(LocalFilesystemToGCSOperator): upload_file_gcs> on 2024-03-15 14:46:11.956678+00:00
+[2024-03-15T14:46:15.897+0000] {standard_task_runner.py:60} INFO - Started process 85 to run task
+[2024-03-15T14:46:15.907+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'upload_file_gcs', 'manual__2024-03-15T14:46:11.956678+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpfkm43ywr']
+[2024-03-15T14:46:15.912+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask upload_file_gcs
+[2024-03-15T14:46:16.005+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.upload_file_gcs manual__2024-03-15T14:46:11.956678+00:00 [running]> on host 43a2aed0dc46
+[2024-03-15T14:46:16.202+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='upload_file_gcs' AIRFLOW_CTX_EXECUTION_DATE='2024-03-15T14:46:11.956678+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-15T14:46:11.956678+00:00'
+[2024-03-15T14:46:16.220+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-15T14:46:16.223+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-15T14:46:16.224+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/transfers/local_to_gcs.py", line 97, in execute
+    raise FileNotFoundError(self.src)
+FileNotFoundError: data/raw/car_sales.csv.gz
+[2024-03-15T14:46:16.240+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=source_to_gcs, task_id=upload_file_gcs, execution_date=20240315T144611, start_date=20240315T144615, end_date=20240315T144616
+[2024-03-15T14:46:16.264+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 33 for task upload_file_gcs (data/raw/car_sales.csv.gz; 85)
+[2024-03-15T14:46:16.282+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-15T14:46:16.315+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

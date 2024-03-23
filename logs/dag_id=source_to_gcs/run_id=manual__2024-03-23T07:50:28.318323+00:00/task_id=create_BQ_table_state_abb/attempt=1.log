@@ -1,0 +1,16 @@
+[2024-03-23T07:51:11.122+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.create_BQ_table_state_abb manual__2024-03-23T07:50:28.318323+00:00 [queued]>
+[2024-03-23T07:51:11.153+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.create_BQ_table_state_abb manual__2024-03-23T07:50:28.318323+00:00 [queued]>
+[2024-03-23T07:51:11.154+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-23T07:51:11.191+0000] {taskinstance.py:2217} INFO - Executing <Task(BigQueryCreateEmptyTableOperator): create_BQ_table_state_abb> on 2024-03-23 07:50:28.318323+00:00
+[2024-03-23T07:51:11.207+0000] {standard_task_runner.py:60} INFO - Started process 2120 to run task
+[2024-03-23T07:51:11.224+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'create_BQ_table_state_abb', 'manual__2024-03-23T07:50:28.318323+00:00', '--job-id', '265', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmplqt4kl3j']
+[2024-03-23T07:51:11.231+0000] {standard_task_runner.py:88} INFO - Job 265: Subtask create_BQ_table_state_abb
+[2024-03-23T07:51:11.364+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.create_BQ_table_state_abb manual__2024-03-23T07:50:28.318323+00:00 [running]> on host ceb99a37e23c
+[2024-03-23T07:51:11.651+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='create_BQ_table_state_abb' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T07:50:28.318323+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-23T07:50:28.318323+00:00'
+[2024-03-23T07:51:11.722+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-23T07:51:11.747+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-23T07:51:11.761+0000] {bigquery.py:1516} INFO - Creating table
+[2024-03-23T07:51:12.231+0000] {taskinstance.py:2386} INFO - Table used_car_analysis_dataset.state_abbrevation already exists.
+[2024-03-23T07:51:12.245+0000] {taskinstance.py:1149} INFO - Marking task as SKIPPED. dag_id=source_to_gcs, task_id=create_BQ_table_state_abb, execution_date=20240323T075028, start_date=20240323T075111, end_date=20240323T075112
+[2024-03-23T07:51:12.291+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-23T07:51:12.350+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,15 @@
+[2024-03-23T06:14:52.874+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.upload_file_gcs manual__2024-03-23T06:14:22.638269+00:00 [queued]>
+[2024-03-23T06:14:52.891+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.upload_file_gcs manual__2024-03-23T06:14:22.638269+00:00 [queued]>
+[2024-03-23T06:14:52.891+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-23T06:14:52.919+0000] {taskinstance.py:2217} INFO - Executing <Task(LocalFilesystemToGCSOperator): upload_file_gcs> on 2024-03-23 06:14:22.638269+00:00
+[2024-03-23T06:14:52.932+0000] {standard_task_runner.py:60} INFO - Started process 617 to run task
+[2024-03-23T06:14:52.942+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'upload_file_gcs', 'manual__2024-03-23T06:14:22.638269+00:00', '--job-id', '204', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpz_dgz8pn']
+[2024-03-23T06:14:52.948+0000] {standard_task_runner.py:88} INFO - Job 204: Subtask upload_file_gcs
+[2024-03-23T06:14:53.035+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.upload_file_gcs manual__2024-03-23T06:14:22.638269+00:00 [running]> on host ceb99a37e23c
+[2024-03-23T06:14:53.177+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='upload_file_gcs' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T06:14:22.638269+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-23T06:14:22.638269+00:00'
+[2024-03-23T06:14:53.193+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-23T06:14:53.196+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-23T06:14:54.541+0000] {gcs.py:557} INFO - File data/car_sales.csv uploaded to data/raw/car_sales.csv in used-car-price-analysis bucket
+[2024-03-23T06:14:54.569+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=source_to_gcs, task_id=upload_file_gcs, execution_date=20240323T061422, start_date=20240323T061452, end_date=20240323T061454
+[2024-03-23T06:14:54.647+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-23T06:14:54.724+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check

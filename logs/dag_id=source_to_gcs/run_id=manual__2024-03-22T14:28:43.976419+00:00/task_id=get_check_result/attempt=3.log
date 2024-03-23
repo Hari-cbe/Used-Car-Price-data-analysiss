@@ -1,0 +1,65 @@
+[2024-03-22T14:31:45.840+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.get_check_result manual__2024-03-22T14:28:43.976419+00:00 [queued]>
+[2024-03-22T14:31:45.853+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.get_check_result manual__2024-03-22T14:28:43.976419+00:00 [queued]>
+[2024-03-22T14:31:45.854+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 3
+[2024-03-22T14:31:45.877+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): get_check_result> on 2024-03-22 14:28:43.976419+00:00
+[2024-03-22T14:31:45.888+0000] {standard_task_runner.py:60} INFO - Started process 851 to run task
+[2024-03-22T14:31:45.896+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'get_check_result', 'manual__2024-03-22T14:28:43.976419+00:00', '--job-id', '177', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpbiqd66cq']
+[2024-03-22T14:31:45.901+0000] {standard_task_runner.py:88} INFO - Job 177: Subtask get_check_result
+[2024-03-22T14:31:45.981+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.get_check_result manual__2024-03-22T14:28:43.976419+00:00 [running]> on host ceb99a37e23c
+[2024-03-22T14:31:46.112+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='get_check_result' AIRFLOW_CTX_EXECUTION_DATE='2024-03-22T14:28:43.976419+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-22T14:28:43.976419+00:00'
+[2024-03-22T14:31:46.118+0000] {sql.py:785} INFO - Executing SQL check: SELECT COUNT(1) from used_car_analysis_dataset.used_car_rice LIMIT 1
+[2024-03-22T14:31:46.132+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-22T14:31:46.136+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-22T14:31:46.206+0000] {sql.py:457} INFO - Running statement: SELECT COUNT(1) from used_car_analysis_dataset.used_car_rice LIMIT 1, parameters: None
+[2024-03-22T14:31:46.208+0000] {bigquery.py:1613} INFO - Inserting job ***_1711117906207031_7b3543582800f11b86d6a67a4c3d0dd7
+[2024-03-22T14:31:46.628+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/sourcetobucket.py", line 79, in run_bigquery_check
+    task_instance = check_file.execute(context={})
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 300, in execute
+    super().execute(context=context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/operators/sql.py", line 786, in execute
+    records = self.get_db_hook().get_first(self.sql, self.parameters)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 276, in get_first
+    return self.run(sql=sql, parameters=parameters, handler=fetch_one_handler)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 404, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 462, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 2746, in execute
+    self.job_id = self._run_query(sql)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 2894, in _run_query
+    job = self.hook.insert_job(configuration=configuration, project_id=self.project_id, location=location)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 485, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 1619, in insert_job
+    job_api_repr.result(timeout=timeout, retry=retry)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1595, in result
+    do_get_result()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1584, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Table used-car-analysis:used_car_analysis_dataset.used_car_rice was not found in location US; reason: notFound, message: Not found: Table used-car-analysis:used_car_analysis_dataset.used_car_rice was not found in location US
+
+Location: US
+Job ID: airflow_1711117906207031_7b3543582800f11b86d6a67a4c3d0dd7
+
+[2024-03-22T14:31:46.643+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=source_to_gcs, task_id=get_check_result, execution_date=20240322T142843, start_date=20240322T143145, end_date=20240322T143146
+[2024-03-22T14:31:46.662+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 177 for task get_check_result (404 Not found: Table used-car-analysis:used_car_analysis_dataset.used_car_rice was not found in location US; reason: notFound, message: Not found: Table used-car-analysis:used_car_analysis_dataset.used_car_rice was not found in location US
+
+Location: US
+Job ID: airflow_1711117906207031_7b3543582800f11b86d6a67a4c3d0dd7
+; 851)
+[2024-03-22T14:31:46.711+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-22T14:31:46.737+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

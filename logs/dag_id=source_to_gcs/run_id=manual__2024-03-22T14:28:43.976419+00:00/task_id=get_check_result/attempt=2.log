@@ -1,0 +1,36 @@
+[2024-03-22T14:30:27.097+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.get_check_result manual__2024-03-22T14:28:43.976419+00:00 [queued]>
+[2024-03-22T14:30:27.122+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.get_check_result manual__2024-03-22T14:28:43.976419+00:00 [queued]>
+[2024-03-22T14:30:27.124+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-03-22T14:30:27.161+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): get_check_result> on 2024-03-22 14:28:43.976419+00:00
+[2024-03-22T14:30:27.173+0000] {standard_task_runner.py:60} INFO - Started process 831 to run task
+[2024-03-22T14:30:27.189+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'get_check_result', 'manual__2024-03-22T14:28:43.976419+00:00', '--job-id', '176', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpq8er36uc']
+[2024-03-22T14:30:27.196+0000] {standard_task_runner.py:88} INFO - Job 176: Subtask get_check_result
+[2024-03-22T14:30:27.302+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.get_check_result manual__2024-03-22T14:28:43.976419+00:00 [running]> on host ceb99a37e23c
+[2024-03-22T14:30:27.474+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='get_check_result' AIRFLOW_CTX_EXECUTION_DATE='2024-03-22T14:28:43.976419+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-22T14:28:43.976419+00:00'
+[2024-03-22T14:30:27.484+0000] {sql.py:785} INFO - Executing SQL check: SELECT COUNT(1) from used_car_analysis_dataset.used_car_price LIMIT 1
+[2024-03-22T14:30:27.506+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-22T14:30:27.509+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-22T14:30:27.623+0000] {sql.py:457} INFO - Running statement: SELECT COUNT(1) from used_car_analysis_dataset.used_car_price LIMIT 1, parameters: None
+[2024-03-22T14:30:27.626+0000] {bigquery.py:1613} INFO - Inserting job ***_1711117827625598_fabb2f9006d5ccbe668044ee8692b8ed
+[2024-03-22T14:30:29.030+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/common/sql/hooks/sql.py:407: AirflowProviderDeprecationWarning: Call to deprecated method _make_common_data_structure. (The `_make_serializable` method is deprecated and support will be removed in a future version of the common.sql provider. Please update the DbApiHook's provider to a version based on common.sql >= 1.9.1.)
+  result = self._make_common_data_structure(handler(cur))
+
+[2024-03-22T14:30:29.032+0000] {sql.py:788} INFO - Record: [558799]
+[2024-03-22T14:30:29.032+0000] {sql.py:796} INFO - Success.
+[2024-03-22T14:30:29.033+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/sourcetobucket.py", line 80, in run_bigquery_check
+    result = task_instance.xcom_pull(task_ids="check_table_is_present")
+AttributeError: 'NoneType' object has no attribute 'xcom_pull'
+[2024-03-22T14:30:29.060+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=source_to_gcs, task_id=get_check_result, execution_date=20240322T142843, start_date=20240322T143027, end_date=20240322T143029
+[2024-03-22T14:30:29.090+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 176 for task get_check_result ('NoneType' object has no attribute 'xcom_pull'; 831)
+[2024-03-22T14:30:29.137+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-22T14:30:29.163+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

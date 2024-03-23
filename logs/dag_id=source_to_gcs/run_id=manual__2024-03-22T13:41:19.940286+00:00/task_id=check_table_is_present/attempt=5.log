@@ -1,0 +1,59 @@
+[2024-03-22T14:00:01.793+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.check_table_is_present manual__2024-03-22T13:41:19.940286+00:00 [queued]>
+[2024-03-22T14:00:01.810+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.check_table_is_present manual__2024-03-22T13:41:19.940286+00:00 [queued]>
+[2024-03-22T14:00:01.811+0000] {taskinstance.py:2193} INFO - Starting attempt 5 of 5
+[2024-03-22T14:00:01.835+0000] {taskinstance.py:2217} INFO - Executing <Task(BigQueryCheckOperator): check_table_is_present> on 2024-03-22 13:41:19.940286+00:00
+[2024-03-22T14:00:01.846+0000] {standard_task_runner.py:60} INFO - Started process 387 to run task
+[2024-03-22T14:00:01.854+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'check_table_is_present', 'manual__2024-03-22T13:41:19.940286+00:00', '--job-id', '165', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpu0n6emew']
+[2024-03-22T14:00:01.859+0000] {standard_task_runner.py:88} INFO - Job 165: Subtask check_table_is_present
+[2024-03-22T14:00:01.940+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.check_table_is_present manual__2024-03-22T13:41:19.940286+00:00 [running]> on host ceb99a37e23c
+[2024-03-22T14:00:02.105+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='check_table_is_present' AIRFLOW_CTX_EXECUTION_DATE='2024-03-22T13:41:19.940286+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-22T13:41:19.940286+00:00'
+[2024-03-22T14:00:02.108+0000] {sql.py:785} INFO - Executing SQL check: SELECT COUNT(1) from used_car_analysis_dataset.used_car_pice LIMIT 1
+[2024-03-22T14:00:02.121+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-22T14:00:02.125+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-22T14:00:02.208+0000] {sql.py:457} INFO - Running statement: SELECT COUNT(1) from used_car_analysis_dataset.used_car_pice LIMIT 1, parameters: None
+[2024-03-22T14:00:02.211+0000] {bigquery.py:1613} INFO - Inserting job ***_1711116002210141_11087a5ea49e1de8721025ba9ebc1340
+[2024-03-22T14:00:02.716+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 300, in execute
+    super().execute(context=context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/operators/sql.py", line 786, in execute
+    records = self.get_db_hook().get_first(self.sql, self.parameters)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 276, in get_first
+    return self.run(sql=sql, parameters=parameters, handler=fetch_one_handler)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 404, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 462, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 2746, in execute
+    self.job_id = self._run_query(sql)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 2894, in _run_query
+    job = self.hook.insert_job(configuration=configuration, project_id=self.project_id, location=location)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 485, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 1619, in insert_job
+    job_api_repr.result(timeout=timeout, retry=retry)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1595, in result
+    do_get_result()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/query.py", line 1584, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/bigquery/job/base.py", line 971, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/api_core/future/polling.py", line 261, in result
+    raise self._exception
+google.api_core.exceptions.NotFound: 404 Not found: Table used-car-analysis:used_car_analysis_dataset.used_car_pice was not found in location US; reason: notFound, message: Not found: Table used-car-analysis:used_car_analysis_dataset.used_car_pice was not found in location US
+
+Location: US
+Job ID: airflow_1711116002210141_11087a5ea49e1de8721025ba9ebc1340
+
+[2024-03-22T14:00:02.774+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=source_to_gcs, task_id=check_table_is_present, execution_date=20240322T134119, start_date=20240322T140001, end_date=20240322T140002
+[2024-03-22T14:00:02.793+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 165 for task check_table_is_present (404 Not found: Table used-car-analysis:used_car_analysis_dataset.used_car_pice was not found in location US; reason: notFound, message: Not found: Table used-car-analysis:used_car_analysis_dataset.used_car_pice was not found in location US
+
+Location: US
+Job ID: airflow_1711116002210141_11087a5ea49e1de8721025ba9ebc1340
+; 387)
+[2024-03-22T14:00:02.833+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-22T14:00:02.873+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

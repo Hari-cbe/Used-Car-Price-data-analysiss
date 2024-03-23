@@ -1,0 +1,16 @@
+[2024-03-23T09:28:40.108+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.choose_task manual__2024-03-23T09:25:44.380208+00:00 [queued]>
+[2024-03-23T09:28:40.128+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.choose_task manual__2024-03-23T09:25:44.380208+00:00 [queued]>
+[2024-03-23T09:28:40.129+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-03-23T09:28:40.157+0000] {taskinstance.py:2217} INFO - Executing <Task(_BranchPythonDecoratedOperator): choose_task> on 2024-03-23 09:25:44.380208+00:00
+[2024-03-23T09:28:40.171+0000] {standard_task_runner.py:60} INFO - Started process 3497 to run task
+[2024-03-23T09:28:40.179+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'choose_task', 'manual__2024-03-23T09:25:44.380208+00:00', '--job-id', '278', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmp8ipmqznu']
+[2024-03-23T09:28:40.185+0000] {standard_task_runner.py:88} INFO - Job 278: Subtask choose_task
+[2024-03-23T09:28:40.275+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.choose_task manual__2024-03-23T09:25:44.380208+00:00 [running]> on host ceb99a37e23c
+[2024-03-23T09:28:40.421+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='choose_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T09:25:44.380208+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-23T09:25:44.380208+00:00'
+[2024-03-23T09:28:40.463+0000] {python.py:202} INFO - Done. Returned value was: ['create_BQ_table_car_price', 'create_BQ_table_state_abb']
+[2024-03-23T09:28:40.464+0000] {branch.py:35} INFO - Branch into ['create_BQ_table_car_price', 'create_BQ_table_state_abb']
+[2024-03-23T09:28:40.465+0000] {skipmixin.py:178} INFO - Following branch ['create_BQ_table_car_price', 'create_BQ_table_state_abb']
+[2024-03-23T09:28:40.509+0000] {skipmixin.py:244} INFO - Skipping tasks [('test_branch', -1)]
+[2024-03-23T09:28:40.587+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=source_to_gcs, task_id=choose_task, execution_date=20240323T092544, start_date=20240323T092840, end_date=20240323T092840
+[2024-03-23T09:28:40.635+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-23T09:28:40.696+0000] {taskinstance.py:3312} INFO - 2 downstream tasks scheduled from follow-on schedule check

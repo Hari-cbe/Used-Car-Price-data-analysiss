@@ -1,0 +1,13 @@
+[2024-03-18T02:08:34.166+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.confirm_file manual__2024-03-18T02:08:22.348984+00:00 [queued]>
+[2024-03-18T02:08:34.191+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.confirm_file manual__2024-03-18T02:08:22.348984+00:00 [queued]>
+[2024-03-18T02:08:34.192+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-18T02:08:34.231+0000] {taskinstance.py:2217} INFO - Executing <Task(_PythonDecoratedOperator): confirm_file> on 2024-03-18 02:08:22.348984+00:00
+[2024-03-18T02:08:34.246+0000] {standard_task_runner.py:60} INFO - Started process 13227 to run task
+[2024-03-18T02:08:34.263+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'confirm_file', 'manual__2024-03-18T02:08:22.348984+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmphai3a9nb']
+[2024-03-18T02:08:34.270+0000] {standard_task_runner.py:88} INFO - Job 74: Subtask confirm_file
+[2024-03-18T02:08:34.389+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.confirm_file manual__2024-03-18T02:08:22.348984+00:00 [running]> on host 484fbc655ee6
+[2024-03-18T02:08:34.591+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='confirm_file' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T02:08:22.348984+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-18T02:08:22.348984+00:00'
+[2024-03-18T02:08:34.595+0000] {python.py:202} INFO - Done. Returned value was: The File is present
+[2024-03-18T02:08:34.669+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=source_to_gcs, task_id=confirm_file, execution_date=20240318T020822, start_date=20240318T020834, end_date=20240318T020834
+[2024-03-18T02:08:34.771+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-18T02:08:34.825+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

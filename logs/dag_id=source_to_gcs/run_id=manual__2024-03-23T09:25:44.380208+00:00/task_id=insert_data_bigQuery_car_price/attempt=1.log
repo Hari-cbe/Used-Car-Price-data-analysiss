@@ -1,0 +1,18 @@
+[2024-03-23T09:28:49.748+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.insert_data_bigQuery_car_price manual__2024-03-23T09:25:44.380208+00:00 [queued]>
+[2024-03-23T09:28:49.795+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.insert_data_bigQuery_car_price manual__2024-03-23T09:25:44.380208+00:00 [queued]>
+[2024-03-23T09:28:49.808+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-23T09:28:49.885+0000] {taskinstance.py:2217} INFO - Executing <Task(GCSToBigQueryOperator): insert_data_bigQuery_car_price> on 2024-03-23 09:25:44.380208+00:00
+[2024-03-23T09:28:49.898+0000] {standard_task_runner.py:60} INFO - Started process 3517 to run task
+[2024-03-23T09:28:49.913+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'insert_data_bigQuery_car_price', 'manual__2024-03-23T09:25:44.380208+00:00', '--job-id', '282', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpgk6qw9zi']
+[2024-03-23T09:28:49.920+0000] {standard_task_runner.py:88} INFO - Job 282: Subtask insert_data_bigQuery_car_price
+[2024-03-23T09:28:50.091+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.insert_data_bigQuery_car_price manual__2024-03-23T09:25:44.380208+00:00 [running]> on host ceb99a37e23c
+[2024-03-23T09:28:50.422+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='insert_data_bigQuery_car_price' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T09:25:44.380208+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-23T09:25:44.380208+00:00'
+[2024-03-23T09:28:50.461+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-23T09:28:50.463+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-23T09:28:50.466+0000] {gcs_to_bigquery.py:379} INFO - Using existing BigQuery table for storing data...
+[2024-03-23T09:28:50.713+0000] {bigquery.py:2328} INFO - Project is not included in destination_project_dataset_table: used_car_analysis_dataset.used_car_price; using project "used-car-analysis"
+[2024-03-23T09:28:50.714+0000] {gcs_to_bigquery.py:383} INFO - Executing: {'load': {'autodetect': True, 'createDisposition': 'CREATE_IF_NEEDED', 'destinationTable': {'projectId': 'used-car-analysis', 'datasetId': 'used_car_analysis_dataset', 'tableId': 'used_car_price'}, 'sourceFormat': 'CSV', 'sourceUris': ['gs://used-car-price-analysis/data/raw/car_sales.csv'], 'writeDisposition': 'WRITE_EMPTY', 'ignoreUnknownValues': False, 'skipLeadingRows': None, 'fieldDelimiter': ',', 'quote': None, 'allowQuotedNewlines': False, 'encoding': 'UTF-8'}}
+[2024-03-23T09:28:50.717+0000] {bigquery.py:1613} INFO - Inserting job ***_source_to_gcs_insert_data_bigQuery_car_price_2024_03_23T09_25_44_380208_00_00_141e34d7ce1607a149d7a711d670cc4f
+[2024-03-23T09:29:03.948+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=source_to_gcs, task_id=insert_data_bigQuery_car_price, execution_date=20240323T092544, start_date=20240323T092849, end_date=20240323T092903
+[2024-03-23T09:29:03.994+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-23T09:29:04.018+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

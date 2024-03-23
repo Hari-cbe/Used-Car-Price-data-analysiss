@@ -1,0 +1,22 @@
+[2024-03-22T13:40:01.708+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.check_table_is_present manual__2024-03-22T13:35:29.280758+00:00 [queued]>
+[2024-03-22T13:40:01.736+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.check_table_is_present manual__2024-03-22T13:35:29.280758+00:00 [queued]>
+[2024-03-22T13:40:01.737+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-22T13:40:01.762+0000] {taskinstance.py:2217} INFO - Executing <Task(BigQueryCheckOperator): check_table_is_present> on 2024-03-22 13:35:29.280758+00:00
+[2024-03-22T13:40:01.772+0000] {standard_task_runner.py:60} INFO - Started process 83 to run task
+[2024-03-22T13:40:01.780+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'check_table_is_present', 'manual__2024-03-22T13:35:29.280758+00:00', '--job-id', '153', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpdx64p0g6']
+[2024-03-22T13:40:01.784+0000] {standard_task_runner.py:88} INFO - Job 153: Subtask check_table_is_present
+[2024-03-22T13:40:01.859+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.check_table_is_present manual__2024-03-22T13:35:29.280758+00:00 [running]> on host ceb99a37e23c
+[2024-03-22T13:40:01.989+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='check_table_is_present' AIRFLOW_CTX_EXECUTION_DATE='2024-03-22T13:35:29.280758+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-22T13:35:29.280758+00:00'
+[2024-03-22T13:40:01.991+0000] {sql.py:785} INFO - Executing SQL check: SELECT COUNT(1) from used_car_analysis_dataset.used_car_price LIMIT 1
+[2024-03-22T13:40:02.006+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-22T13:40:02.010+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-22T13:40:02.244+0000] {sql.py:457} INFO - Running statement: SELECT COUNT(1) from used_car_analysis_dataset.used_car_price LIMIT 1, parameters: None
+[2024-03-22T13:40:02.246+0000] {bigquery.py:1613} INFO - Inserting job ***_1711114802245352_fabb2f9006d5ccbe668044ee8692b8ed
+[2024-03-22T13:40:04.508+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/common/sql/hooks/sql.py:407: AirflowProviderDeprecationWarning: Call to deprecated method _make_common_data_structure. (The `_make_serializable` method is deprecated and support will be removed in a future version of the common.sql provider. Please update the DbApiHook's provider to a version based on common.sql >= 1.9.1.)
+  result = self._make_common_data_structure(handler(cur))
+
+[2024-03-22T13:40:04.510+0000] {sql.py:788} INFO - Record: [558799]
+[2024-03-22T13:40:04.511+0000] {sql.py:796} INFO - Success.
+[2024-03-22T13:40:04.527+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=source_to_gcs, task_id=check_table_is_present, execution_date=20240322T133529, start_date=20240322T134001, end_date=20240322T134004
+[2024-03-22T13:40:04.568+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-22T13:40:04.600+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

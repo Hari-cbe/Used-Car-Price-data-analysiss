@@ -1,0 +1,44 @@
+[2024-03-18T01:38:26.421+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.check_file manual__2024-03-18T01:38:20.396484+00:00 [queued]>
+[2024-03-18T01:38:26.439+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.check_file manual__2024-03-18T01:38:20.396484+00:00 [queued]>
+[2024-03-18T01:38:26.440+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-18T01:38:26.469+0000] {taskinstance.py:2217} INFO - Executing <Task(GCSObjectExistenceSensor): check_file> on 2024-03-18 01:38:20.396484+00:00
+[2024-03-18T01:38:26.479+0000] {standard_task_runner.py:60} INFO - Started process 12762 to run task
+[2024-03-18T01:38:26.488+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'check_file', 'manual__2024-03-18T01:38:20.396484+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmp1zwoaj2_']
+[2024-03-18T01:38:26.494+0000] {standard_task_runner.py:88} INFO - Job 55: Subtask check_file
+[2024-03-18T01:38:26.574+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.check_file manual__2024-03-18T01:38:20.396484+00:00 [running]> on host 484fbc655ee6
+[2024-03-18T01:38:26.705+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='check_file' AIRFLOW_CTX_EXECUTION_DATE='2024-03-18T01:38:20.396484+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-18T01:38:20.396484+00:00'
+[2024-03-18T01:38:26.708+0000] {gcs.py:98} INFO - Sensor checks existence of : used-car-price-analysis, car_sales.csv
+[2024-03-18T01:38:26.725+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-18T01:38:26.728+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-18T01:39:27.106+0000] {gcs.py:98} INFO - Sensor checks existence of : used-car-price-analysis, car_sales.csv
+[2024-03-18T01:39:27.129+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-18T01:39:27.130+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-18T01:40:27.536+0000] {gcs.py:98} INFO - Sensor checks existence of : used-car-price-analysis, car_sales.csv
+[2024-03-18T01:40:27.547+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-18T01:40:27.549+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-18T01:41:27.834+0000] {gcs.py:98} INFO - Sensor checks existence of : used-car-price-analysis, car_sales.csv
+[2024-03-18T01:41:27.846+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-18T01:41:27.848+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-18T01:42:28.109+0000] {gcs.py:98} INFO - Sensor checks existence of : used-car-price-analysis, car_sales.csv
+[2024-03-18T01:42:28.120+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-18T01:42:28.121+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-18T01:42:44.249+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2024-03-18T01:42:44.255+0000] {process_utils.py:131} INFO - Sending 15 to group 12762. PIDs of all processes in the group: [12762]
+[2024-03-18T01:42:44.256+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 12762
+[2024-03-18T01:42:44.257+0000] {taskinstance.py:2483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-03-18T01:42:44.277+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/sensors/gcs.py", line 112, in execute
+    super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/sensors/base.py", line 293, in execute
+    time.sleep(self._get_next_poke_interval(started_at, run_duration, try_number))
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2485, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-03-18T01:42:44.301+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=source_to_gcs, task_id=check_file, execution_date=20240318T013820, start_date=20240318T013826, end_date=20240318T014244
+[2024-03-18T01:42:44.323+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 55 for task check_file (Task received SIGTERM signal; 12762)
+[2024-03-18T01:42:44.350+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=12762, status='terminated', exitcode=1, started='01:38:26') (12762) terminated with exit code 1

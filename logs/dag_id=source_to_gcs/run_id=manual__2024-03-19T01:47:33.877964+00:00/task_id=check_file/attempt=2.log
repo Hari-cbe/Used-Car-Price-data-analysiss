@@ -1,0 +1,16 @@
+[2024-03-19T02:07:08.646+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.check_file manual__2024-03-19T01:47:33.877964+00:00 [queued]>
+[2024-03-19T02:07:08.662+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.check_file manual__2024-03-19T01:47:33.877964+00:00 [queued]>
+[2024-03-19T02:07:08.663+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-03-19T02:07:08.682+0000] {taskinstance.py:2217} INFO - Executing <Task(GCSObjectExistenceSensor): check_file> on 2024-03-19 01:47:33.877964+00:00
+[2024-03-19T02:07:08.691+0000] {standard_task_runner.py:60} INFO - Started process 685 to run task
+[2024-03-19T02:07:08.698+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'check_file', 'manual__2024-03-19T01:47:33.877964+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpr7wimp_c']
+[2024-03-19T02:07:08.703+0000] {standard_task_runner.py:88} INFO - Job 91: Subtask check_file
+[2024-03-19T02:07:08.772+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.check_file manual__2024-03-19T01:47:33.877964+00:00 [running]> on host 484fbc655ee6
+[2024-03-19T02:07:08.909+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='check_file' AIRFLOW_CTX_EXECUTION_DATE='2024-03-19T01:47:33.877964+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-19T01:47:33.877964+00:00'
+[2024-03-19T02:07:08.912+0000] {gcs.py:98} INFO - Sensor checks existence of : used-car-price-analysis, data/raw/car_sales.csv
+[2024-03-19T02:07:08.925+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-19T02:07:08.927+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-19T02:07:09.150+0000] {base.py:295} INFO - Success criteria met. Exiting.
+[2024-03-19T02:07:09.168+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=source_to_gcs, task_id=check_file, execution_date=20240319T014733, start_date=20240319T020708, end_date=20240319T020709
+[2024-03-19T02:07:09.235+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-19T02:07:09.283+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
