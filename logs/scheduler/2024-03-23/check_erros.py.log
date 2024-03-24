@@ -2498,3 +2498,648 @@ IndentationError: unexpected indent
 [2024-03-23T10:05:40.509+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:05:40.509+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2024-03-23T10:05:40.619+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:05:40.619+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
 [2024-03-23T10:05:40.768+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.366 seconds
+[2024-03-23T10:06:11.056+0000] {processor.py:161} INFO - Started process (PID=4793) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:06:11.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:06:11.060+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:06:11.060+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:06:11.113+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:06:11.214+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:06:11.213+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:06:11.319+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:06:11.318+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:06:11.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.317 seconds
+[2024-03-23T10:06:41.624+0000] {processor.py:161} INFO - Started process (PID=4802) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:06:41.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:06:41.656+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:06:41.655+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:06:41.811+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:06:41.929+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:06:41.929+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:06:42.052+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:06:42.051+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:06:42.136+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.537 seconds
+[2024-03-23T10:07:12.403+0000] {processor.py:161} INFO - Started process (PID=4811) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:07:12.406+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:07:12.409+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:07:12.408+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:07:12.440+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:07:12.497+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:07:12.497+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:07:12.554+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:07:12.554+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:07:12.600+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.206 seconds
+[2024-03-23T10:07:42.829+0000] {processor.py:161} INFO - Started process (PID=4821) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:07:42.864+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:07:42.867+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:07:42.866+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:07:42.897+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:07:42.956+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:07:42.955+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:07:43.021+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:07:43.020+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:07:43.065+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.246 seconds
+[2024-03-23T10:08:13.935+0000] {processor.py:161} INFO - Started process (PID=4831) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:08:13.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:08:13.940+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:08:13.940+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:08:14.012+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:08:14.198+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:08:14.197+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:08:14.289+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:08:14.288+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:08:14.361+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.454 seconds
+[2024-03-23T10:08:44.613+0000] {processor.py:161} INFO - Started process (PID=4839) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:08:44.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:08:44.629+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:08:44.628+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:08:44.661+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:08:44.724+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:08:44.723+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:08:44.791+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:08:44.790+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:08:44.834+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.231 seconds
+[2024-03-23T10:09:15.042+0000] {processor.py:161} INFO - Started process (PID=4848) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:09:15.045+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:09:15.049+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:09:15.047+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:09:15.084+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:09:15.149+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:09:15.148+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:09:15.246+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:09:15.245+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:09:15.287+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.257 seconds
+[2024-03-23T10:09:45.497+0000] {processor.py:161} INFO - Started process (PID=4857) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:09:45.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:09:45.510+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:09:45.509+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:09:45.544+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:09:45.608+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:09:45.607+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:09:45.665+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:09:45.665+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:09:45.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.225 seconds
+[2024-03-23T10:10:16.044+0000] {processor.py:161} INFO - Started process (PID=4866) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:10:16.047+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:10:16.049+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:10:16.049+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:10:16.083+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:10:16.144+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:10:16.144+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:10:16.198+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:10:16.198+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:10:16.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.200 seconds
+[2024-03-23T10:10:46.535+0000] {processor.py:161} INFO - Started process (PID=4876) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:10:46.550+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:10:46.553+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:10:46.552+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:10:46.611+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:10:46.766+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:10:46.766+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:10:46.897+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:10:46.896+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:10:46.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.471 seconds
+[2024-03-23T10:11:17.266+0000] {processor.py:161} INFO - Started process (PID=4886) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:11:17.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:11:17.272+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:11:17.271+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:11:17.305+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:11:17.370+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:11:17.369+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:11:17.440+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:11:17.439+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:11:17.480+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.225 seconds
+[2024-03-23T10:11:47.752+0000] {processor.py:161} INFO - Started process (PID=4895) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:11:47.762+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:11:47.764+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:11:47.763+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:11:47.797+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:11:47.853+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:11:47.852+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:11:47.909+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:11:47.909+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:11:47.945+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.202 seconds
+[2024-03-23T10:12:18.168+0000] {processor.py:161} INFO - Started process (PID=4904) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:12:18.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:12:18.173+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:12:18.172+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:12:18.200+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:12:18.311+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:12:18.310+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:12:18.369+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:12:18.368+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:12:18.404+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.248 seconds
+[2024-03-23T10:12:48.673+0000] {processor.py:161} INFO - Started process (PID=4913) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:12:48.716+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:12:48.718+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:12:48.717+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:12:48.748+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:12:48.807+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:12:48.806+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:12:48.869+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:12:48.868+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:12:48.958+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.302 seconds
+[2024-03-23T10:13:19.337+0000] {processor.py:161} INFO - Started process (PID=4923) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:13:19.340+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:13:19.343+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:13:19.342+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:13:19.378+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:13:19.440+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:13:19.439+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:13:19.502+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:13:19.501+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:13:19.545+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.218 seconds
+[2024-03-23T10:13:49.838+0000] {processor.py:161} INFO - Started process (PID=4933) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:13:49.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:13:49.875+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:13:49.874+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:13:49.901+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:13:49.959+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:13:49.958+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:13:50.015+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:13:50.014+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:13:50.060+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.232 seconds
+[2024-03-23T10:14:20.324+0000] {processor.py:161} INFO - Started process (PID=4943) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:14:20.327+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:14:20.330+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:14:20.329+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:14:20.360+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:14:20.417+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:14:20.416+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:14:20.473+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:14:20.473+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:14:20.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.203 seconds
+[2024-03-23T10:14:50.750+0000] {processor.py:161} INFO - Started process (PID=4952) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:14:50.764+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:14:50.767+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:14:50.766+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:14:50.799+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:14:50.859+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:14:50.858+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:14:50.920+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:14:50.919+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:14:50.962+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.222 seconds
+[2024-03-23T10:15:21.226+0000] {processor.py:161} INFO - Started process (PID=4961) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:15:21.231+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:15:21.233+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:15:21.232+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:15:21.299+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:15:21.421+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:15:21.421+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:15:21.548+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:15:21.547+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:15:21.624+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.414 seconds
+[2024-03-23T10:15:51.885+0000] {processor.py:161} INFO - Started process (PID=4971) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:15:51.910+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:15:51.912+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:15:51.912+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:15:51.935+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:15:52.003+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:15:51.993+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:15:52.080+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:15:52.079+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:15:52.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.273 seconds
+[2024-03-23T10:16:22.431+0000] {processor.py:161} INFO - Started process (PID=4980) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:16:22.434+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:16:22.437+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:16:22.436+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:16:22.514+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:16:22.585+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:16:22.585+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:16:22.643+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:16:22.643+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:16:22.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.267 seconds
+[2024-03-23T10:16:52.959+0000] {processor.py:161} INFO - Started process (PID=4989) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:16:52.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:16:52.975+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:16:52.974+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:16:53.022+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:16:53.162+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:16:53.161+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:16:53.273+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:16:53.273+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:16:53.352+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.404 seconds
+[2024-03-23T10:17:23.577+0000] {processor.py:161} INFO - Started process (PID=4999) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:17:23.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:17:23.584+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:17:23.583+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:17:23.619+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:17:23.686+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:17:23.685+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:17:23.754+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:17:23.753+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:17:23.801+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.234 seconds
+[2024-03-23T10:17:54.071+0000] {processor.py:161} INFO - Started process (PID=5007) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:17:54.084+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:17:54.087+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:17:54.086+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:17:54.123+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:17:54.188+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:17:54.187+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:17:54.257+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:17:54.256+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:17:54.318+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.259 seconds
+[2024-03-23T10:18:24.579+0000] {processor.py:161} INFO - Started process (PID=5016) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:18:24.583+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:18:24.586+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:18:24.585+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:18:24.619+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:18:24.710+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:18:24.709+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:18:24.786+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:18:24.785+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:18:24.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.255 seconds
+[2024-03-23T10:18:55.056+0000] {processor.py:161} INFO - Started process (PID=5025) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:18:55.111+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:18:55.113+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:18:55.112+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:18:55.142+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:18:55.208+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:18:55.207+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:18:55.267+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:18:55.266+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:18:55.304+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.258 seconds
+[2024-03-23T10:19:25.614+0000] {processor.py:161} INFO - Started process (PID=5036) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:19:25.625+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:19:25.627+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:19:25.626+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:19:25.655+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:19:25.716+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:19:25.715+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:19:25.779+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:19:25.778+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:19:25.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.211 seconds
+[2024-03-23T10:19:56.050+0000] {processor.py:161} INFO - Started process (PID=5046) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:19:56.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:19:56.063+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:19:56.062+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:19:56.124+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:19:56.216+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:19:56.216+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:19:56.324+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:19:56.323+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:19:56.425+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.395 seconds
+[2024-03-23T10:20:26.740+0000] {processor.py:161} INFO - Started process (PID=5055) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:20:26.744+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:20:26.747+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:20:26.746+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:20:26.777+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:20:26.830+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:20:26.830+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:20:26.891+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:20:26.891+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:20:26.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.197 seconds
+[2024-03-23T10:20:57.208+0000] {processor.py:161} INFO - Started process (PID=5064) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:20:57.210+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:20:57.213+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:20:57.212+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:20:57.242+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:20:57.334+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:20:57.333+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:20:57.413+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:20:57.413+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:20:57.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.283 seconds
+[2024-03-23T10:21:27.821+0000] {processor.py:161} INFO - Started process (PID=5073) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:21:27.824+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:21:27.826+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:21:27.825+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:21:27.856+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:21:27.951+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:21:27.947+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:21:28.025+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:21:28.024+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:21:28.068+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.256 seconds
+[2024-03-23T10:21:58.335+0000] {processor.py:161} INFO - Started process (PID=5083) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:21:58.339+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:21:58.341+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:21:58.340+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:21:58.374+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:21:58.436+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:21:58.436+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:21:58.495+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:21:58.495+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:21:58.538+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.220 seconds
+[2024-03-23T10:22:28.800+0000] {processor.py:161} INFO - Started process (PID=5092) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:22:28.828+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:22:28.830+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:22:28.829+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:22:28.881+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:22:28.989+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:22:28.989+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:22:29.092+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:22:29.091+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:22:29.216+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.433 seconds
+[2024-03-23T10:22:59.543+0000] {processor.py:161} INFO - Started process (PID=5101) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:22:59.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:22:59.550+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:22:59.548+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:22:59.589+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:22:59.673+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:22:59.672+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:22:59.766+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:22:59.765+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:22:59.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.277 seconds
+[2024-03-23T10:23:30.016+0000] {processor.py:161} INFO - Started process (PID=5116) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:23:30.040+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:23:30.042+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:23:30.041+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:23:30.065+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:23:30.126+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:23:30.125+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:23:30.194+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:23:30.193+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:23:30.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.226 seconds
+[2024-03-23T10:24:00.486+0000] {processor.py:161} INFO - Started process (PID=5125) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:24:00.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:24:00.492+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:24:00.491+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:24:00.527+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:24:00.615+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:24:00.614+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:24:00.682+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:24:00.681+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:24:00.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.250 seconds
+[2024-03-23T10:24:31.015+0000] {processor.py:161} INFO - Started process (PID=5134) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:24:31.045+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:24:31.048+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:24:31.047+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:24:31.096+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:24:31.174+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:24:31.174+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:24:31.305+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:24:31.304+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:24:31.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.402 seconds
+[2024-03-23T10:25:01.705+0000] {processor.py:161} INFO - Started process (PID=5143) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:25:01.709+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:25:01.712+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:25:01.711+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:25:01.748+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:25:01.815+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:25:01.815+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:25:01.880+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:25:01.879+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:25:01.919+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.229 seconds
+[2024-03-23T10:25:32.237+0000] {processor.py:161} INFO - Started process (PID=5152) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:25:32.259+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:25:32.261+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:25:32.261+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:25:32.320+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:25:32.430+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:25:32.430+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:25:32.495+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:25:32.494+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:25:32.570+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.349 seconds
+[2024-03-23T10:26:02.897+0000] {processor.py:161} INFO - Started process (PID=5161) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:26:02.901+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:26:02.904+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:26:02.903+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:26:02.938+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:26:03.029+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:26:03.028+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:26:03.096+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:26:03.095+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:26:03.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.261 seconds
+[2024-03-23T10:26:33.464+0000] {processor.py:161} INFO - Started process (PID=5170) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:26:33.484+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:26:33.486+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:26:33.485+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:26:33.554+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:26:33.682+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:26:33.681+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:26:33.840+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:26:33.839+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:26:33.904+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.460 seconds
+[2024-03-23T10:27:04.401+0000] {processor.py:161} INFO - Started process (PID=5181) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:27:04.404+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:27:04.407+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:27:04.406+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:27:04.438+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:27:04.501+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:27:04.500+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:27:04.577+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:27:04.576+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:27:04.616+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.224 seconds
+[2024-03-23T10:27:34.889+0000] {processor.py:161} INFO - Started process (PID=5190) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:27:34.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:27:34.913+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:27:34.912+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:27:34.944+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:27:35.002+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:27:35.001+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:27:35.066+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:27:35.065+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:27:35.104+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.225 seconds
+[2024-03-23T10:28:05.339+0000] {processor.py:161} INFO - Started process (PID=5199) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:28:05.341+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:28:05.343+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:28:05.342+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:28:05.378+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:28:05.475+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:28:05.474+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:28:05.569+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:28:05.569+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:28:05.653+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.333 seconds
+[2024-03-23T10:28:35.998+0000] {processor.py:161} INFO - Started process (PID=5208) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:28:36.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:28:36.043+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:28:36.043+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:28:36.180+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:28:36.442+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:28:36.441+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:28:36.671+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:28:36.670+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:28:36.847+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.868 seconds
+[2024-03-23T10:29:07.126+0000] {processor.py:161} INFO - Started process (PID=5216) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:29:07.129+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:29:07.133+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:29:07.132+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:29:07.167+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:29:07.355+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:29:07.354+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:29:07.415+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:29:07.414+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:29:07.468+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.351 seconds
+[2024-03-23T10:29:37.736+0000] {processor.py:161} INFO - Started process (PID=5225) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:29:37.776+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:29:37.778+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:29:37.778+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:29:37.832+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:29:37.969+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:29:37.969+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:29:38.102+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:29:38.102+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:29:38.182+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.454 seconds
+[2024-03-23T10:30:08.978+0000] {processor.py:161} INFO - Started process (PID=5237) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:30:08.982+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:30:08.984+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:30:08.983+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:30:09.017+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:30:09.082+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:30:09.081+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:30:09.138+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:30:09.137+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:30:09.175+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.223 seconds
+[2024-03-23T10:30:39.579+0000] {processor.py:161} INFO - Started process (PID=5246) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:30:39.610+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:30:39.617+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:30:39.616+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:30:39.719+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:30:39.847+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:30:39.847+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:30:40.034+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:30:40.033+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:30:40.155+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.607 seconds
+[2024-03-23T10:31:10.504+0000] {processor.py:161} INFO - Started process (PID=5254) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:31:10.507+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:31:10.510+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:31:10.509+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:31:10.546+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:31:10.610+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:31:10.609+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:31:10.692+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:31:10.691+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:31:10.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.240 seconds
+[2024-03-23T10:31:40.971+0000] {processor.py:161} INFO - Started process (PID=5264) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:31:41.012+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:31:41.014+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:31:41.013+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:31:41.047+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:31:41.110+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:31:41.109+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:31:41.172+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:31:41.171+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:31:41.213+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.253 seconds
+[2024-03-23T10:32:11.488+0000] {processor.py:161} INFO - Started process (PID=5273) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:32:11.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:32:11.493+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:32:11.493+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:32:11.525+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:32:11.648+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:32:11.648+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:32:11.722+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:32:11.721+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:32:11.834+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.367 seconds
+[2024-03-23T10:32:42.246+0000] {processor.py:161} INFO - Started process (PID=5282) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:32:42.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:32:42.271+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:32:42.270+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:32:42.292+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:32:42.343+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:32:42.342+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:32:42.403+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:32:42.403+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:32:42.449+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.212 seconds
+[2024-03-23T10:32:58.665+0000] {processor.py:161} INFO - Started process (PID=5285) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:32:58.667+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:32:58.668+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:32:58.668+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:32:58.727+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:32:58.685+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/check_erros.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/check_erros.py", line 61, in <module>
+    check_errors()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 3955, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/check_erros.py", line 55, in check_errors
+    python_callable=check_values
+NameError: name 'check_values' is not defined
+[2024-03-23T10:32:58.728+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:32:58.760+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.102 seconds
+[2024-03-23T10:33:07.724+0000] {processor.py:161} INFO - Started process (PID=5292) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:07.725+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:33:07.727+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:07.726+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:07.742+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:07.740+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/check_erros.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/check_erros.py", line 62, in <module>
+    check_errors()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 3955, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/check_erros.py", line 56, in check_errors
+    python_callable=check_values
+NameError: name 'check_values' is not defined
+[2024-03-23T10:33:07.743+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:07.772+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.054 seconds
+[2024-03-23T10:33:18.895+0000] {processor.py:161} INFO - Started process (PID=5294) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:18.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:33:18.902+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:18.901+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:18.935+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:19.007+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:19.007+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:33:19.072+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:19.071+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:33:19.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.245 seconds
+[2024-03-23T10:33:21.149+0000] {processor.py:161} INFO - Started process (PID=5295) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:21.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:33:21.154+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:21.153+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:21.198+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:21.331+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:21.328+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:33:21.399+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:21.398+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:33:21.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.309 seconds
+[2024-03-23T10:33:51.588+0000] {processor.py:161} INFO - Started process (PID=5304) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:51.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:33:51.593+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:51.593+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:51.617+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:33:51.662+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:51.661+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:33:51.711+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:33:51.711+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:33:51.749+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.168 seconds
+[2024-03-23T10:34:09.905+0000] {processor.py:161} INFO - Started process (PID=5312) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:34:09.907+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:34:09.908+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:34:09.908+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:34:09.930+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:34:09.970+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:34:09.970+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:34:10.011+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:34:10.010+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:34:10.040+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.142 seconds
+[2024-03-23T10:34:40.293+0000] {processor.py:161} INFO - Started process (PID=5321) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:34:40.304+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:34:40.306+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:34:40.306+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:34:40.329+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:34:40.375+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:34:40.374+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:34:40.428+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:34:40.427+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:34:40.462+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.176 seconds
+[2024-03-23T10:35:10.980+0000] {processor.py:161} INFO - Started process (PID=5330) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:10.983+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:35:10.989+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:10.984+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:11.017+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:11.090+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:11.089+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:35:11.154+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:11.154+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:35:11.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.236 seconds
+[2024-03-23T10:35:15.040+0000] {processor.py:161} INFO - Started process (PID=5331) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:15.044+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:35:15.047+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:15.046+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:15.141+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:15.290+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:15.290+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:35:15.377+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:15.376+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:35:15.427+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.399 seconds
+[2024-03-23T10:35:37.773+0000] {processor.py:161} INFO - Started process (PID=5339) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:37.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:35:37.783+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:37.782+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:37.816+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:37.867+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:37.866+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:35:37.922+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:37.921+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:35:37.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.206 seconds
+[2024-03-23T10:35:56.898+0000] {processor.py:161} INFO - Started process (PID=5341) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:56.914+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:35:56.916+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:56.915+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:56.941+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:56.983+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:56.983+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:35:57.029+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:57.029+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:35:57.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.172 seconds
+[2024-03-23T10:35:58.928+0000] {processor.py:161} INFO - Started process (PID=5342) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:58.930+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:35:58.932+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:58.931+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:58.955+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:35:58.993+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:58.992+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:35:59.030+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:35:59.030+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:35:59.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.139 seconds
+[2024-03-23T10:36:13.208+0000] {processor.py:161} INFO - Started process (PID=5350) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:36:13.211+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:36:13.213+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:36:13.212+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:36:13.266+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:36:13.319+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:36:13.319+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:36:13.380+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:36:13.379+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:36:13.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.222 seconds
+[2024-03-23T10:36:43.846+0000] {processor.py:161} INFO - Started process (PID=5359) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:36:43.907+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:36:43.910+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:36:43.909+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:36:43.939+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:36:43.992+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:36:43.992+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:36:44.064+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:36:44.063+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:36:44.137+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.299 seconds
+[2024-03-23T10:37:14.470+0000] {processor.py:161} INFO - Started process (PID=5370) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:37:14.473+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:37:14.476+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:37:14.475+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:37:14.505+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:37:14.561+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:37:14.560+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:37:14.623+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:37:14.622+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:37:14.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.236 seconds
+[2024-03-23T10:37:45.038+0000] {processor.py:161} INFO - Started process (PID=5379) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:37:45.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:37:45.095+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:37:45.095+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:37:45.117+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:37:45.155+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:37:45.154+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:37:45.197+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:37:45.197+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:37:45.234+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.202 seconds
+[2024-03-23T10:38:15.664+0000] {processor.py:161} INFO - Started process (PID=5387) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:38:15.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:38:15.668+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:38:15.667+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:38:15.688+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:38:15.727+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:38:15.727+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:38:15.773+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:38:15.773+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:38:15.812+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.154 seconds
+[2024-03-23T10:38:46.117+0000] {processor.py:161} INFO - Started process (PID=5396) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:38:46.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:38:46.141+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:38:46.140+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:38:46.162+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:38:46.199+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:38:46.199+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:38:46.243+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:38:46.243+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:38:46.277+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.166 seconds
+[2024-03-23T10:39:16.494+0000] {processor.py:161} INFO - Started process (PID=5406) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:39:16.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:39:16.499+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:39:16.498+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:39:16.530+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:39:16.577+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:39:16.576+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:39:16.627+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:39:16.626+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:39:16.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.176 seconds
+[2024-03-23T10:39:47.034+0000] {processor.py:161} INFO - Started process (PID=5415) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:39:47.057+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:39:47.058+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:39:47.058+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:39:47.079+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:39:47.118+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:39:47.118+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:39:47.157+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:39:47.156+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:39:47.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.157 seconds
+[2024-03-23T10:40:17.468+0000] {processor.py:161} INFO - Started process (PID=5424) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:40:17.471+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:40:17.474+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:40:17.473+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:40:17.505+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:40:17.564+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:40:17.564+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:40:17.630+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:40:17.629+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:40:17.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.215 seconds
+[2024-03-23T10:40:48.055+0000] {processor.py:161} INFO - Started process (PID=5433) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:40:48.109+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:40:48.112+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:40:48.111+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:40:48.170+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:40:48.234+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:40:48.233+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:40:48.300+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:40:48.299+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:40:48.339+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.298 seconds
+[2024-03-23T10:41:18.644+0000] {processor.py:161} INFO - Started process (PID=5442) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:41:18.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:41:18.648+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:41:18.647+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:41:18.672+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:41:18.714+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:41:18.714+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:41:18.762+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:41:18.762+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:41:18.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.157 seconds
+[2024-03-23T10:41:49.183+0000] {processor.py:161} INFO - Started process (PID=5451) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:41:49.200+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:41:49.202+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:41:49.201+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:41:49.230+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:41:49.281+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:41:49.280+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:41:49.331+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:41:49.330+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:41:49.364+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.189 seconds
+[2024-03-23T10:42:19.629+0000] {processor.py:161} INFO - Started process (PID=5460) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:42:19.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:42:19.633+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:42:19.632+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:42:19.655+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:42:19.702+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:42:19.701+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:42:19.747+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:42:19.747+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:42:19.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.163 seconds
+[2024-03-23T10:42:50.205+0000] {processor.py:161} INFO - Started process (PID=5469) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:42:50.220+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:42:50.222+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:42:50.221+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:42:50.244+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:42:50.286+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:42:50.286+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:42:50.330+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:42:50.329+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:42:50.362+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.167 seconds
+[2024-03-23T10:43:20.671+0000] {processor.py:161} INFO - Started process (PID=5478) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:43:20.673+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:43:20.675+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:43:20.674+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:43:20.696+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:43:20.737+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:43:20.736+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:43:20.775+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:43:20.775+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:43:20.803+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.139 seconds
+[2024-03-23T10:43:51.055+0000] {processor.py:161} INFO - Started process (PID=5487) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:43:51.082+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:43:51.084+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:43:51.084+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:43:51.107+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:43:51.149+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:43:51.149+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:43:51.203+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:43:51.203+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:43:51.236+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.188 seconds
+[2024-03-23T10:44:21.419+0000] {processor.py:161} INFO - Started process (PID=5496) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:44:21.421+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:44:21.423+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:44:21.423+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:44:21.450+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:44:21.506+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:44:21.505+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:44:21.572+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:44:21.571+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:44:21.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.205 seconds
+[2024-03-23T10:44:51.984+0000] {processor.py:161} INFO - Started process (PID=5505) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:44:52.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:44:52.018+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:44:52.017+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:44:52.051+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:44:52.108+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:44:52.108+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:44:52.174+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:44:52.174+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:44:52.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.248 seconds
+[2024-03-23T10:45:22.550+0000] {processor.py:161} INFO - Started process (PID=5514) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:45:22.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:45:22.553+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:45:22.553+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:45:22.577+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:45:22.619+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:45:22.619+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:45:22.663+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:45:22.662+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:45:22.701+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.159 seconds
+[2024-03-23T10:45:52.845+0000] {processor.py:161} INFO - Started process (PID=5524) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:45:52.871+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:45:52.873+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:45:52.873+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:45:52.898+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:45:52.945+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:45:52.945+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:45:52.988+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:45:52.987+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:45:53.024+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.186 seconds
+[2024-03-23T10:46:23.342+0000] {processor.py:161} INFO - Started process (PID=5533) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:46:23.346+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:46:23.348+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:46:23.347+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:46:23.372+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:46:23.416+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:46:23.415+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:46:23.457+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:46:23.456+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:46:23.490+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.155 seconds
+[2024-03-23T10:46:53.742+0000] {processor.py:161} INFO - Started process (PID=5542) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:46:53.744+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:46:53.745+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:46:53.745+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:46:53.767+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:46:53.804+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:46:53.804+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:46:53.842+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:46:53.842+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:46:53.867+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.132 seconds
+[2024-03-23T10:47:24.158+0000] {processor.py:161} INFO - Started process (PID=5552) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:47:24.160+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:47:24.162+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:47:24.161+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:47:24.184+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:47:24.223+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:47:24.223+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:47:24.264+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:47:24.263+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:47:24.297+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.146 seconds
+[2024-03-23T10:47:54.668+0000] {processor.py:161} INFO - Started process (PID=5561) to work on /opt/airflow/dags/check_erros.py
+[2024-03-23T10:47:54.690+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/check_erros.py for tasks to queue
+[2024-03-23T10:47:54.692+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:47:54.691+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:47:54.762+0000] {processor.py:840} INFO - DAG(s) 'check_errors' retrieved from /opt/airflow/dags/check_erros.py
+[2024-03-23T10:47:54.840+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:47:54.839+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-23T10:47:54.941+0000] {logging_mixin.py:188} INFO - [2024-03-23T10:47:54.940+0000] {dag.py:3834} INFO - Setting next_dagrun for check_errors to 2024-03-23 00:00:00+00:00, run_after=2024-03-24 00:00:00+00:00
+[2024-03-23T10:47:55.022+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/check_erros.py took 0.373 seconds

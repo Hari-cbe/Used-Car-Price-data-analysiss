@@ -3,6 +3,7 @@ import pendulum
 import os
 import requests
 import pandas as pd
+import logging 
 
 # Opearatos and provides for gcp 
 from airflow.operators.bash import BashOperator
@@ -32,29 +33,28 @@ STATE_ABB_TABLE_NAME = "state_abbrevation"
 
 def check_errors():
         
-    def check_values():
-        check_value = BigQueryCheckOperator(
-            task_id = "check_for_state_abb_table",
-            sql = f'SELECT COUNT(*) FROM {DATASET_NAME}.{CAR_PRICE_TABLE_NAME} LIMIT 1',
-            gcp_conn_id=GCP_CONN_ID
-        )
+    def run_bigquery_check_for_car_price_table():
+            # Execute the BigQuery check
+            check_bq_car_price = BigQueryCheckOperator(
+                task_id="check_for_car_price_table",
+                sql=f"SELECT COUNT(*) from {DATASET_NAME}.{CAR_PRICE_TABLE_NAME} LIMIT 1",
+                gcp_conn_id=GCP_CONN_ID
+            )
 
-        try:
-        # Execute the task
-            result = check_value.execute(context={})
-            if result:
-                return "pass"
-            else:
-                return "Kholi"
-        except Exception as e:
+            try:
+                # Execute the task
+                check_bq_car_price.execute(context={})
+                logging.info(check_bq_car_price.execute(context={}))
+                return "CAR_PRICE_TABLE_is_found"
+            except Exception as e:
         # Log the exception if something goes wrong
-            print(f"Error occurred: {str(e)}")
-            return "Kholi"
+                logging.error(f"BigQuery check failed: {str(e)}") 
+                return "CAR_PRICE_TABLE_not_found"
         
 
     check_values_result = PythonOperator(
         task_id = "check_value_for",
-        python_callable=check_values
+        python_callable=run_bigquery_check_for_car_price_table
     )
 
     check_values_result

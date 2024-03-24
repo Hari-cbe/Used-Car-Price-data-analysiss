@@ -1,4 +1,5 @@
-from airflow.decorators import dag, task 
+
+# Python Packages
 import pendulum
 import os
 import requests
@@ -6,12 +7,12 @@ import pandas as pd
 import logging
 
 # Opearatos and provides for gcp 
+from airflow.decorators import dag, task 
 from airflow.operators.bash import BashOperator
 from airflow.exceptions import AirflowException
 from airflow.operators.python import PythonOperator
 from airflow.utils.trigger_rule import TriggerRule
 from airflow.providers.google.cloud.transfers.local_to_gcs import LocalFilesystemToGCSOperator
-# from airflow.providers.google.cloud.sensors.gcs import GCSObjectExistenceSensor
 from airflow.providers.google.cloud.operators.bigquery import BigQueryCheckOperator
 from airflow.providers.google.cloud.transfers.gcs_to_bigquery import GCSToBigQueryOperator
 from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateEmptyTableOperator,IfExistAction
@@ -67,7 +68,7 @@ def source_to_gcs():
             
         upload_task.execute(context=None) 
 
-    
+
     def run_bigquery_check_for_car_price_table():
             # Execute the BigQuery check
             check_bq_car_price = BigQueryCheckOperator(
@@ -78,7 +79,8 @@ def source_to_gcs():
 
             try:
         # Execute the task
-                check_bq_car_price
+                check_bq_car_price.execute(context={})
+                # If the check passes (no exception raised)
                 return "CAR_PRICE_TABLE_is_found"
             except Exception as e:
         # Log the exception if something goes wrong
@@ -90,7 +92,7 @@ def source_to_gcs():
         python_callable=run_bigquery_check_for_car_price_table
     )
 
-
+    
     def run_bigquery_check_for_state_abb_table():
          
         check_value = BigQueryCheckOperator(
@@ -101,8 +103,7 @@ def source_to_gcs():
 
 
         try:
-            check_value
-
+            check_value.execute(context={})
         # If the check passes (no exception raised)
             return "STATE_ABB_TABLE_is_found"
 
@@ -126,6 +127,10 @@ def source_to_gcs():
 
         if car_price_result == "CAR_PRICE_TABLE_is_found" and state_abb_result == "STATE_ABB_TABLE_is_found":
             return "test_branch"
+        elif car_price_result == "CAR_PRICE_TABLE_not_found" and state_abb_result == "STATE_ABB_TABLE_is_found":
+            return "create_BQ_table_car_price"
+        elif car_price_result == "CAR_PRICE_TABLE_is_found" and state_abb_result == "STATE_ABB_TABLE_is_found":
+            return "create_BQ_table_state_abb"
         return ["create_BQ_table_car_price","create_BQ_table_state_abb"]
     
 
@@ -154,7 +159,7 @@ def source_to_gcs():
         destination_project_dataset_table=f"{DATASET_NAME}.{CAR_PRICE_TABLE_NAME}",
         source_format='CSV',
         gcp_conn_id = GCP_CONN_ID,
-        trigger_rule=TriggerRule.ONE_SUCCESS
+        trigger_rule='none_failed_min_one_success'
     )
     insert_data_bigQuery_state_abb = GCSToBigQueryOperator(
         task_id = "insert_data_bigQuery_state_abb",
@@ -163,7 +168,7 @@ def source_to_gcs():
         destination_project_dataset_table=f"{DATASET_NAME}.{STATE_ABB_TABLE_NAME}",
         source_format='CSV',
         gcp_conn_id = GCP_CONN_ID,
-        trigger_rule=TriggerRule.ONE_SUCCESS
+        trigger_rule='none_failed_min_one_success'
     )
 
     test_bash = BashOperator(
