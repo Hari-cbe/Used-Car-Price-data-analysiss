@@ -1,0 +1,8 @@
+version: 2 
+
+sources: 
+  - name: used_car_price_analysis
+    database: used_car_price_analysis
+    tables: 
+      - name: state_abbrevation
+      - name: used_car_price 

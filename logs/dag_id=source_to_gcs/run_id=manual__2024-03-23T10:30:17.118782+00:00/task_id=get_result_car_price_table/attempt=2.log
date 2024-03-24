@@ -1,0 +1,13 @@
+[2024-03-23T10:31:59.660+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.get_result_car_price_table manual__2024-03-23T10:30:17.118782+00:00 [queued]>
+[2024-03-23T10:31:59.683+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.get_result_car_price_table manual__2024-03-23T10:30:17.118782+00:00 [queued]>
+[2024-03-23T10:31:59.684+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-03-23T10:31:59.715+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): get_result_car_price_table> on 2024-03-23 10:30:17.118782+00:00
+[2024-03-23T10:31:59.727+0000] {standard_task_runner.py:60} INFO - Started process 4498 to run task
+[2024-03-23T10:31:59.737+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'get_result_car_price_table', 'manual__2024-03-23T10:30:17.118782+00:00', '--job-id', '316', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmp_imj_szf']
+[2024-03-23T10:31:59.744+0000] {standard_task_runner.py:88} INFO - Job 316: Subtask get_result_car_price_table
+[2024-03-23T10:31:59.854+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.get_result_car_price_table manual__2024-03-23T10:30:17.118782+00:00 [running]> on host ceb99a37e23c
+[2024-03-23T10:32:00.056+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='get_result_car_price_table' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T10:30:17.118782+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-23T10:30:17.118782+00:00'
+[2024-03-23T10:32:00.066+0000] {python.py:202} INFO - Done. Returned value was: CAR_PRICE_TABLE_is_found
+[2024-03-23T10:32:00.118+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=source_to_gcs, task_id=get_result_car_price_table, execution_date=20240323T103017, start_date=20240323T103159, end_date=20240323T103200
+[2024-03-23T10:32:00.175+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-23T10:32:00.222+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

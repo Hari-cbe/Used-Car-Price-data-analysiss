@@ -176,10 +176,6 @@ def source_to_gcs():
         bash_command="echo Branching..."
     )
 
-
-
-
-
     # calling operations
     get_data_from_source = get_data_from_source()
     upload_local_files = upload_local_files()

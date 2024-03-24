@@ -1,0 +1,23 @@
+[2024-03-24T04:22:26.153+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: source_to_gcs.get_result_car_price_table scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-24T04:22:26.167+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: source_to_gcs.get_result_car_price_table scheduled__2024-03-23T00:00:00+00:00 [queued]>
+[2024-03-24T04:22:26.168+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-03-24T04:22:26.192+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): get_result_car_price_table> on 2024-03-23 00:00:00+00:00
+[2024-03-24T04:22:26.203+0000] {standard_task_runner.py:60} INFO - Started process 80 to run task
+[2024-03-24T04:22:26.211+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'source_to_gcs', 'get_result_car_price_table', 'scheduled__2024-03-23T00:00:00+00:00', '--job-id', '336', '--raw', '--subdir', 'DAGS_FOLDER/sourcetobucket.py', '--cfg-path', '/tmp/tmpju5f0t0h']
+[2024-03-24T04:22:26.216+0000] {standard_task_runner.py:88} INFO - Job 336: Subtask get_result_car_price_table
+[2024-03-24T04:22:26.298+0000] {task_command.py:423} INFO - Running <TaskInstance: source_to_gcs.get_result_car_price_table scheduled__2024-03-23T00:00:00+00:00 [running]> on host 86bc6ed33ecd
+[2024-03-24T04:22:26.439+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='source_to_gcs' AIRFLOW_CTX_TASK_ID='get_result_car_price_table' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-23T00:00:00+00:00'
+[2024-03-24T04:22:26.444+0000] {sql.py:785} INFO - Executing SQL check: SELECT COUNT(*) from used_car_analysis_dataset.used_car_price LIMIT 1
+[2024-03-24T04:22:26.459+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-24T04:22:26.463+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-24T04:22:26.536+0000] {sql.py:457} INFO - Running statement: SELECT COUNT(*) from used_car_analysis_dataset.used_car_price LIMIT 1, parameters: None
+[2024-03-24T04:22:26.538+0000] {bigquery.py:1613} INFO - Inserting job ***_1711254146537761_692f6613f62229254217b4d9e55504a9
+[2024-03-24T04:22:27.572+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/common/sql/hooks/sql.py:407: AirflowProviderDeprecationWarning: Call to deprecated method _make_common_data_structure. (The `_make_serializable` method is deprecated and support will be removed in a future version of the common.sql provider. Please update the DbApiHook's provider to a version based on common.sql >= 1.9.1.)
+  result = self._make_common_data_structure(handler(cur))
+
+[2024-03-24T04:22:27.574+0000] {sql.py:788} INFO - Record: [558799]
+[2024-03-24T04:22:27.575+0000] {sql.py:796} INFO - Success.
+[2024-03-24T04:22:27.575+0000] {python.py:202} INFO - Done. Returned value was: CAR_PRICE_TABLE_is_found
+[2024-03-24T04:22:27.609+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=source_to_gcs, task_id=get_result_car_price_table, execution_date=20240323T000000, start_date=20240324T042226, end_date=20240324T042227
+[2024-03-24T04:22:27.671+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-24T04:22:27.719+0000] {taskinstance.py:3312} INFO - 1 downstream tasks scheduled from follow-on schedule check
