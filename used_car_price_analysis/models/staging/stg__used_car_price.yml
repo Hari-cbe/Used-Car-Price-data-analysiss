@@ -1,0 +1,69 @@
+version: 2 
+
+models:
+  - name: stg__used_car_price
+    description: "what to update"
+    columns:
+      - name: manufactured_year
+        data_type: int64
+        description: "This is the manufactured year for the car"
+
+      - name: make
+        data_type: string
+        description: ""
+
+      - name: model
+        data_type: string
+        description: ""
+
+      - name: trim
+        data_type: string
+        description: ""
+
+      - name: body
+        data_type: string
+        description: ""
+
+      - name: transmission
+        data_type: string
+        description: ""
+
+      - name: vin
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+
+      - name: condition
+        data_type: float64
+        description: ""
+
+      - name: odometer
+        data_type: float64
+        description: ""
+
+      - name: color
+        data_type: string
+        description: ""
+
+      - name: interior
+        data_type: string
+        description: ""
+
+      - name: seller
+        data_type: string
+        description: ""
+
+      - name: mmr
+        data_type: float64
+        description: ""
+
+      - name: sellingprice
+        data_type: float64
+        description: ""
+
+      - name: saledate
+        data_type: timestamp
+        description: ""
