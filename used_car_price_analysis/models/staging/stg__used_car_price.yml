@@ -2,68 +2,68 @@ version: 2
 
 models:
   - name: stg__used_car_price
-    description: "what to update"
+    description: "The staging layer of the used car price in 2014 & 2015"
     columns:
       - name: manufactured_year
         data_type: int64
-        description: "This is the manufactured year for the car"
+        description: "The manufacturing year of the vehicle."
 
       - name: make
         data_type: string
-        description: ""
+        description: "he brand or manufacturer of the vehicle."
 
       - name: model
         data_type: string
-        description: ""
+        description: "The specific model of the vehicle."
 
-      - name: trim
+      - name: additional_design
         data_type: string
-        description: ""
+        description: "additional designation for the vehicle model."
 
-      - name: body
+      - name: body_type
         data_type: string
-        description: ""
+        description: "The body type of the vehicle (e.g., SUV, Sedan)."
 
       - name: transmission
         data_type: string
-        description: ""
+        description: "The type of transmission in the vehicle (e.g., automatic)."
 
-      - name: vin
+      - name: vechicle_id_number
         data_type: string
-        description: ""
+        description: "Vehicle Identification Number, a unique code for each vehicle."
 
       - name: state
         data_type: string
-        description: ""
+        description: "The state where the vehicle is registered"
 
       - name: condition
         data_type: float64
-        description: ""
+        description: "Condition of the vehicle, possibly rated on a scale."
 
       - name: odometer
         data_type: float64
-        description: ""
+        description: "The mileage or distance traveled by the vehicle."
 
       - name: color
         data_type: string
-        description: ""
+        description: "Exterior color of the vehicle."
 
       - name: interior
         data_type: string
-        description: ""
+        description: "Interior color of the vehicle."
 
       - name: seller
         data_type: string
-        description: ""
+        description: "The entity selling the vehicle."
 
-      - name: mmr
+      - name: manheim_market_report
         data_type: float64
-        description: ""
+        description: "Manheim Market Report, possibly indicating the estimated market value of the vehicle."
 
       - name: sellingprice
         data_type: float64
-        description: ""
+        description: "The price at which the vehicle was sold"
 
       - name: saledate
         data_type: timestamp
-        description: ""
+        description: "The date and time when the vehicle was sold."

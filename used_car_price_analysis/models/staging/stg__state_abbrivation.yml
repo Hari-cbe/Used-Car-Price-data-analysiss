@@ -1,0 +1,21 @@
+version: 2 
+
+models:
+  - name: stg__state_abbrivation 
+    description: "The staging layer of the state_abbrivation"
+    columns:
+      - name: state 
+        description: "States in USA"
+        data_type: string
+        tests:
+          - not_null
+          - unique
+
+      - name: state_abbrevation
+        description: "primary key, The abbrivation to the states"
+        data_type: string 
+        constraints:
+          - type: primary_key
+        tests:
+          - not_null
+          - unique

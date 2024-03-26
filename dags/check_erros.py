@@ -43,7 +43,7 @@ def check_errors():
 
             try:
                 # Execute the task
-                check_bq_car_price.execute(context={})
+                    
                 logging.info(check_bq_car_price.execute(context={}))
                 return "CAR_PRICE_TABLE_is_found"
             except Exception as e:

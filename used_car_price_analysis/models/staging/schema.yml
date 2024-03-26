@@ -4,5 +4,5 @@ sources:
   - name: used_car_analysis_dataset
     database: used-car-analysis
     tables: 
-      - name: state_abbrevation
+      - name: state_abbrevation 
       - name: used_car_price 

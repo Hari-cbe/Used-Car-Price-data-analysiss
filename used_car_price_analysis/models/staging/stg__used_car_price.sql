@@ -7,20 +7,20 @@ with source as (
 renamed as (
 
     select
+        vin as vechicle_id_number,
         year as manufactured_year,
         make,
         model,
-        trim,
-        body,
+        trim as additional_design,
+        body as body_type,
         transmission,
-        vin,
         state,
         condition,
         odometer,
         color,
         interior,
-        seller,
-        mmr,
+        seller ,
+        mmr as manheim_market_report,
         sellingprice,
         saledate
 
