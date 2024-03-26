@@ -11,7 +11,7 @@ models:
           - not_null
           - unique
 
-      - name: state_abbrevation
+      - name: state_abbrivation
         description: "primary key, The abbrivation to the states"
         data_type: string 
         constraints:

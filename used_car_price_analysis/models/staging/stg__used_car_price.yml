@@ -31,10 +31,18 @@ models:
       - name: vechicle_id_number
         data_type: string
         description: "Vehicle Identification Number, a unique code for each vehicle."
+        constraints:
+          - type: primary_key
+        
 
       - name: state
         data_type: string
         description: "The state where the vehicle is registered"
+        # tests:
+        #   - not_null
+        #   - relationships:
+        #       to: ref('stg__state_abbrivation')
+        #       field: state_abbrivation
 
       - name: condition
         data_type: float64
@@ -55,6 +63,9 @@ models:
       - name: seller
         data_type: string
         description: "The entity selling the vehicle."
+        tests:
+          - not_null 
+
 
       - name: manheim_market_report
         data_type: float64
@@ -63,7 +74,11 @@ models:
       - name: sellingprice
         data_type: float64
         description: "The price at which the vehicle was sold"
-
+        tests:
+          - not_null 
+        
       - name: saledate
         data_type: timestamp
         description: "The date and time when the vehicle was sold."
+        tests: 
+          - not_null
