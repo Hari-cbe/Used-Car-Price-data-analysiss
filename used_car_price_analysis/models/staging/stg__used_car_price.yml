@@ -38,11 +38,11 @@ models:
       - name: state
         data_type: string
         description: "The state where the vehicle is registered"
-        # tests:
-        #   - not_null
-        #   - relationships:
-        #       to: ref('stg__state_abbrivation')
-        #       field: state_abbrivation
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg__state_abbrivation')
+              field: state_abbrivation
 
       - name: condition
         data_type: float64

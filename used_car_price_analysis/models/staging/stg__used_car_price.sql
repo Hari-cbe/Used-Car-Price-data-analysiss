@@ -26,6 +26,8 @@ renamed as (
 
     from source
 
+    where state not in ('on','qc','ab','ns')
+
 )
 
 select * from renamed
