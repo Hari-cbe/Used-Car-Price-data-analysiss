@@ -7,7 +7,7 @@
 )}}
 
 with source as (
-    select * from {{ref('stg__used_car_price')}}
+    select * from {{ref('stg__used_car_price')}} where odometer is not null
 )
 select  
     vechicle_id_number,
@@ -19,8 +19,14 @@ select
     state,
     condition,
     odometer,
-    color,
-    interior,
+    CASE 
+      when color = '—' then null
+      else color
+    END color,
+    CASE 
+        when interior = '—' then null 
+        else interior
+    END as interior,
     seller ,
     manheim_market_report,
     sellingprice,

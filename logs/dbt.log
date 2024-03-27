@@ -29,3 +29,33 @@ Happy modeling!
 [0m04:35:56.668913 [debug] [MainThread]: Command `dbt init` succeeded at 04:35:56.668502 after 140.64 seconds
 [0m04:35:56.669970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f805a1276d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8056df5d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f805a859220>]}
 [0m04:35:56.670917 [debug] [MainThread]: Flushing usage events
+[0m01:00:40.715300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66ebc039a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66ec2f0a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66ec2f0dc0>]}
+
+
+============================== 01:00:40.761088 | ccd0f7bd-a5e4-42a4-b8d7-df27daf06973 ==============================
+[0m01:00:40.761088 [info ] [MainThread]: Running with dbt=1.7.10
+[0m01:00:40.762885 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/hariatde_gmail_com/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run -s int__used_car_price', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:00:40.763860 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/hariatde_gmail_com/project-used-cars/Used-Car-Price-data-analysiss/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:00:40.768482 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.15579875, "process_user_time": 3.233303, "process_kernel_time": 0.152541, "process_mem_max_rss": "85176", "process_in_blocks": "64", "process_out_blocks": "16", "command_success": false}
+[0m01:00:40.770748 [debug] [MainThread]: Command `dbt run` failed at 01:00:40.770479 after 0.16 seconds
+[0m01:00:40.771569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66ebc039a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66ec2f0a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66ec2f0940>]}
+[0m01:00:40.772358 [debug] [MainThread]: Flushing usage events
+[0m11:24:16.919543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f579d6969a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f579bc36a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f579bc36dc0>]}
+
+
+============================== 11:24:16.959787 | 0c15cec3-dd2e-46c6-8166-cbb15dde16f2 ==============================
+[0m11:24:16.959787 [info ] [MainThread]: Running with dbt=1.7.10
+[0m11:24:16.961581 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/home/hariatde_gmail_com/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt compile -s int__used_car_price', 'send_anonymous_usage_stats': 'True'}
+[0m11:24:16.962468 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/hariatde_gmail_com/project-used-cars/Used-Car-Price-data-analysiss/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:24:16.965892 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_wall_clock_time": 0.14453216, "process_user_time": 3.095974, "process_kernel_time": 0.151379, "process_mem_max_rss": "85248", "process_in_blocks": "56", "process_out_blocks": "8", "command_success": false}
+[0m11:24:16.970092 [debug] [MainThread]: Command `dbt compile` failed at 11:24:16.969629 after 0.15 seconds
+[0m11:24:16.971331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f579d6969a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f579bbda340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f579bbda2e0>]}
+[0m11:24:16.972601 [debug] [MainThread]: Flushing usage events

@@ -41,6 +41,8 @@ models:
       - name: odometer
         data_type: float64
         description: ""
+        tests: 
+          - not_null
 
       - name: color
         data_type: string
