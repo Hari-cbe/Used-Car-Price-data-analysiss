@@ -1,0 +1,73 @@
+models:
+  - name: int__used_car_price
+    description: ""
+    columns:
+      - name: vechicle_id_number
+        data_type: string
+        description: ""
+        tests:
+          - not_null 
+
+      - name: manufactured_year
+        data_type: int64
+        description: "{{doc('manufactured_year')}}"
+
+      - name: make
+        data_type: string
+        description: "{{doc('make')}}"
+
+      - name: model
+        data_type: string
+        description: "{{doc('model')}}"
+
+      - name: body_type
+        data_type: string
+        description: ""
+
+      - name: transmission
+        data_type: string
+        description: ""
+
+      - name: state
+        data_type: string
+        description: ""
+        tests:
+          - not_null 
+
+      - name: condition
+        data_type: float64
+        description: ""
+
+      - name: odometer
+        data_type: float64
+        description: ""
+
+      - name: color
+        data_type: string
+        description: ""
+
+      - name: interior
+        data_type: string
+        description: ""
+
+      - name: seller
+        data_type: string
+        description: ""
+        tests:
+          - not_null
+
+      - name: manheim_market_report
+        data_type: float64
+        description: ""
+
+      - name: sellingprice
+        data_type: float64
+        description: ""
+        tests:
+          - not_null
+
+      - name: saledate
+        data_type: date
+        description: ""
+        tests:
+          - not_null

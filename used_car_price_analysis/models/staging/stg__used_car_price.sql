@@ -1,3 +1,7 @@
+{{ config(
+  persist_docs={"relation": true, "columns": true}
+) }}
+
 with source as (
 
     select * from {{ source('used_car_analysis_dataset', 'used_car_price') }}
@@ -26,6 +30,7 @@ renamed as (
 
     from source
 
+    -- These are states that is not avaliable in us 
     where state not in ('on','qc','ab','ns')
 
 )

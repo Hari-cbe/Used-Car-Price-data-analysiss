@@ -6,15 +6,15 @@ models:
     columns:
       - name: manufactured_year
         data_type: int64
-        description: "The manufacturing year of the vehicle."
+        description: "{{ doc('manufactured_year') }}"
 
       - name: make
-        data_type: string
-        description: "he brand or manufacturer of the vehicle."
+        data_type: stringss
+        description: "{{ doc('make') }}"
 
       - name: model
         data_type: string
-        description: "The specific model of the vehicle."
+        description: "{{ doc('model') }}"
 
       - name: additional_design
         data_type: string
@@ -31,8 +31,8 @@ models:
       - name: vechicle_id_number
         data_type: string
         description: "Vehicle Identification Number, a unique code for each vehicle."
-        constraints:
-          - type: primary_key
+        tests:
+          - not_null
         
 
       - name: state
