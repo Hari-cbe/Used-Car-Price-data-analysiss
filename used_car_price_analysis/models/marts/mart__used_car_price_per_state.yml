@@ -1,40 +1,40 @@
 
 models:
   - name: mart__used_car_price_per_state
-    description: ""
+    description: "The golden layer for the used car price "
     columns:
       - name: vechicle_id_number
         data_type: string
-        description: ""
+        description: "{{  doc('vechicle_id_number') }}"
         tests:
           - not_null
 
       - name: state
         data_type: string
-        description: ""
+        description: "{{  doc('state') }}"
         tests:
           - not_null
 
       - name: makers
         data_type: string
-        description: ""
+        description: "{{ doc('make')  }}"
         tests:
           - not_null
 
       - name: odometer
         data_type: float64
-        description: ""
+        description: "{{  doc('odometer') }}"
         tests:
           - not_null
 
       - name: sellingprice
         data_type: float64
-        description: ""
+        description: "{{  doc('sellingprice') }}"
         tests:
           - not_null
 
       - name: saledate
         data_type: date
-        description: ""
+        description: "{{  doc('saledate') }}"
         tests:
           - not_null

@@ -79486,3 +79486,1802 @@ File Path                            PID    Runtime      # DAGs    # Errors  Las
 /opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-28T02:39:08
 /opt/airflow/dags/test_airflow.py                             1           0  0.21s           2024-03-28T02:39:09
 ================================================================================
+[2024-03-29T01:17:35.807+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-03-29T01:17:35.823+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-03-29T01:17:35.824+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-03-29T01:17:35.827+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T01:17:35.912+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T01:17:48.657+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/test_airflow.py                             0           0
+/opt/airflow/dags/sourcetobucket.py     49  0.31s             0           0
+/opt/airflow/dags/check_erros.py        48  0.37s             0           0
+================================================================================
+[2024-03-29T01:18:18.951+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  1.44s           2024-03-29T01:17:49
+/opt/airflow/dags/check_erros.py                              1           0  1.37s           2024-03-29T01:17:49
+/opt/airflow/dags/test_airflow.py                             1           0  0.75s           2024-03-29T01:17:50
+================================================================================
+[2024-03-29T01:18:49.087+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  1.55s           2024-03-29T01:18:21
+/opt/airflow/dags/check_erros.py                              1           0  1.31s           2024-03-29T01:18:21
+/opt/airflow/dags/test_airflow.py                             1           0  0.63s           2024-03-29T01:18:21
+================================================================================
+[2024-03-29T01:19:19.322+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.35s           2024-03-29T01:18:52
+/opt/airflow/dags/check_erros.py                              1           0  0.32s           2024-03-29T01:18:52
+/opt/airflow/dags/test_airflow.py                             1           0  0.24s           2024-03-29T01:18:52
+================================================================================
+[2024-03-29T01:19:49.847+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.31s           2024-03-29T01:19:22
+/opt/airflow/dags/test_airflow.py                             1           0  0.26s           2024-03-29T01:19:22
+/opt/airflow/dags/check_erros.py                              1           0  0.26s           2024-03-29T01:19:22
+================================================================================
+[2024-03-29T01:20:20.460+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.39s           2024-03-29T01:19:53
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.33s           2024-03-29T01:19:53
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T01:19:53
+================================================================================
+[2024-03-29T01:20:51.062+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.36s           2024-03-29T01:20:23
+/opt/airflow/dags/check_erros.py                              1           0  0.32s           2024-03-29T01:20:23
+/opt/airflow/dags/test_airflow.py                             1           0  0.21s           2024-03-29T01:20:24
+================================================================================
+[2024-03-29T01:21:21.204+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.86s           2024-03-29T01:20:55
+/opt/airflow/dags/check_erros.py                              1           0  0.79s           2024-03-29T01:20:54
+/opt/airflow/dags/test_airflow.py                             1           0  0.33s           2024-03-29T01:20:55
+================================================================================
+[2024-03-29T01:21:51.271+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.70s           2024-03-29T01:21:25
+/opt/airflow/dags/test_airflow.py                             1           0  0.49s           2024-03-29T01:21:26
+/opt/airflow/dags/check_erros.py                              1           0  0.41s           2024-03-29T01:21:25
+================================================================================
+[2024-03-29T01:22:21.642+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.32s           2024-03-29T01:21:56
+/opt/airflow/dags/check_erros.py                              1           0  0.31s           2024-03-29T01:21:56
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T01:21:56
+================================================================================
+[2024-03-29T01:22:36.097+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T01:22:36.101+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T01:22:52.225+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.34s           2024-03-29T01:22:27
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T01:22:26
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T01:22:27
+================================================================================
+[2024-03-29T01:23:22.814+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.34s           2024-03-29T01:22:57
+/opt/airflow/dags/check_erros.py                              1           0  0.31s           2024-03-29T01:22:57
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T01:22:57
+================================================================================
+[2024-03-29T01:23:53.328+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:23:28
+/opt/airflow/dags/check_erros.py                              1           0  0.28s           2024-03-29T01:23:28
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T01:23:28
+================================================================================
+[2024-03-29T01:24:23.366+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.61s           2024-03-29T01:23:58
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.56s           2024-03-29T01:23:58
+/opt/airflow/dags/test_airflow.py                             1           0  0.27s           2024-03-29T01:23:59
+================================================================================
+[2024-03-29T01:24:53.914+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.53s           2024-03-29T01:24:29
+/opt/airflow/dags/check_erros.py                              1           0  0.47s           2024-03-29T01:24:29
+/opt/airflow/dags/test_airflow.py                             1           0  0.33s           2024-03-29T01:24:30
+================================================================================
+[2024-03-29T01:25:24.477+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.34s           2024-03-29T01:25:00
+/opt/airflow/dags/check_erros.py                              1           0  0.31s           2024-03-29T01:25:00
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T01:25:00
+================================================================================
+[2024-03-29T01:25:55.046+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.35s           2024-03-29T01:25:30
+/opt/airflow/dags/check_erros.py                              1           0  0.32s           2024-03-29T01:25:30
+/opt/airflow/dags/test_airflow.py                             1           0  0.23s           2024-03-29T01:25:31
+================================================================================
+[2024-03-29T01:26:25.553+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.29s           2024-03-29T01:26:01
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:26:01
+/opt/airflow/dags/test_airflow.py                             1           0  0.24s           2024-03-29T01:26:01
+================================================================================
+[2024-03-29T01:26:56.038+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.28s           2024-03-29T01:26:31
+/opt/airflow/dags/check_erros.py                              1           0  0.28s           2024-03-29T01:26:31
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T01:26:32
+================================================================================
+[2024-03-29T01:27:26.548+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.31s           2024-03-29T01:27:02
+/opt/airflow/dags/check_erros.py                              1           0  0.29s           2024-03-29T01:27:02
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T01:27:02
+================================================================================
+[2024-03-29T01:27:36.603+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T01:27:36.610+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T01:27:56.766+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.90s           2024-03-29T01:27:33
+/opt/airflow/dags/check_erros.py                              1           0  0.85s           2024-03-29T01:27:33
+/opt/airflow/dags/test_airflow.py                             1           0  0.52s           2024-03-29T01:27:33
+================================================================================
+[2024-03-29T01:28:27.266+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:28:04
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T01:28:04
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T01:28:04
+================================================================================
+[2024-03-29T01:28:57.751+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.27s           2024-03-29T01:28:34
+/opt/airflow/dags/check_erros.py                              1           0  0.23s           2024-03-29T01:28:34
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T01:28:34
+================================================================================
+[2024-03-29T01:29:28.238+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.28s           2024-03-29T01:29:05
+/opt/airflow/dags/check_erros.py                              1           0  0.28s           2024-03-29T01:29:05
+/opt/airflow/dags/test_airflow.py                             1           0  0.17s           2024-03-29T01:29:05
+================================================================================
+[2024-03-29T01:29:58.747+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.32s           2024-03-29T01:29:35
+/opt/airflow/dags/check_erros.py                              1           0  0.32s           2024-03-29T01:29:35
+/opt/airflow/dags/test_airflow.py                             1           0  0.21s           2024-03-29T01:29:35
+================================================================================
+[2024-03-29T01:30:29.441+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.48s           2024-03-29T01:30:06
+/opt/airflow/dags/check_erros.py                              1           0  0.44s           2024-03-29T01:30:06
+/opt/airflow/dags/test_airflow.py                             1           0  0.23s           2024-03-29T01:30:06
+================================================================================
+[2024-03-29T01:30:59.473+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.81s           2024-03-29T01:30:37
+/opt/airflow/dags/check_erros.py                              1           0  0.44s           2024-03-29T01:30:36
+/opt/airflow/dags/test_airflow.py                             1           0  0.41s           2024-03-29T01:30:37
+================================================================================
+[2024-03-29T01:31:29.642+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  1.31s           2024-03-29T01:31:08
+/opt/airflow/dags/check_erros.py                              1           0  1.21s           2024-03-29T01:31:08
+/opt/airflow/dags/test_airflow.py                             1           0  0.72s           2024-03-29T01:31:09
+================================================================================
+[2024-03-29T01:32:00.353+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.28s           2024-03-29T01:31:39
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.25s           2024-03-29T01:31:39
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T01:31:40
+================================================================================
+[2024-03-29T01:32:30.476+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.73s           2024-03-29T01:32:10
+/opt/airflow/dags/check_erros.py                              1           0  0.70s           2024-03-29T01:32:10
+/opt/airflow/dags/test_airflow.py                             1           0  0.27s           2024-03-29T01:32:11
+================================================================================
+[2024-03-29T01:32:36.710+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T01:32:36.713+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T01:33:01.045+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.33s           2024-03-29T01:32:40
+/opt/airflow/dags/check_erros.py                              1           0  0.33s           2024-03-29T01:32:40
+/opt/airflow/dags/test_airflow.py                             1           0  0.17s           2024-03-29T01:32:42
+================================================================================
+[2024-03-29T01:33:31.536+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.28s           2024-03-29T01:33:11
+/opt/airflow/dags/check_erros.py                              1           0  0.28s           2024-03-29T01:33:11
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T01:33:12
+================================================================================
+[2024-03-29T01:34:02.238+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.48s           2024-03-29T01:33:42
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.42s           2024-03-29T01:33:42
+/opt/airflow/dags/test_airflow.py                             1           0  0.21s           2024-03-29T01:33:43
+================================================================================
+[2024-03-29T01:34:32.389+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.73s           2024-03-29T01:34:13
+/opt/airflow/dags/check_erros.py                              1           0  0.72s           2024-03-29T01:34:13
+/opt/airflow/dags/test_airflow.py                             1           0  0.25s           2024-03-29T01:34:14
+================================================================================
+[2024-03-29T01:35:02.518+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.62s           2024-03-29T01:34:43
+/opt/airflow/dags/check_erros.py                              1           0  0.57s           2024-03-29T01:34:43
+/opt/airflow/dags/test_airflow.py                             1           0  0.55s           2024-03-29T01:34:45
+================================================================================
+[2024-03-29T01:35:32.546+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.28s           2024-03-29T01:35:14
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T01:35:14
+/opt/airflow/dags/test_airflow.py                             1           0  0.16s           2024-03-29T01:35:15
+================================================================================
+[2024-03-29T01:36:03.047+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.30s           2024-03-29T01:35:44
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:35:44
+/opt/airflow/dags/test_airflow.py                             1           0  0.24s           2024-03-29T01:35:46
+================================================================================
+[2024-03-29T01:36:33.607+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.32s           2024-03-29T01:36:16
+/opt/airflow/dags/check_erros.py                              1           0  0.30s           2024-03-29T01:36:15
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.30s           2024-03-29T01:36:15
+================================================================================
+[2024-03-29T01:37:04.068+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.25s           2024-03-29T01:36:45
+/opt/airflow/dags/check_erros.py                              1           0  0.24s           2024-03-29T01:36:45
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T01:36:47
+================================================================================
+[2024-03-29T01:37:34.572+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:37:16
+/opt/airflow/dags/check_erros.py                              1           0  0.29s           2024-03-29T01:37:16
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T01:37:17
+================================================================================
+[2024-03-29T01:37:36.759+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T01:37:36.762+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T01:38:05.017+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.25s           2024-03-29T01:37:46
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T01:37:46
+/opt/airflow/dags/test_airflow.py                             1           0  0.17s           2024-03-29T01:37:48
+================================================================================
+[2024-03-29T01:38:35.048+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.64s           2024-03-29T01:38:17
+/opt/airflow/dags/check_erros.py                              1           0  0.59s           2024-03-29T01:38:17
+/opt/airflow/dags/test_airflow.py                             1           0  0.26s           2024-03-29T01:38:18
+================================================================================
+[2024-03-29T01:39:05.810+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.66s           2024-03-29T01:38:48
+/opt/airflow/dags/check_erros.py                              1           0  0.55s           2024-03-29T01:38:48
+/opt/airflow/dags/test_airflow.py                             1           0  0.31s           2024-03-29T01:38:49
+================================================================================
+[2024-03-29T01:39:35.902+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.66s           2024-03-29T01:39:19
+/opt/airflow/dags/check_erros.py                              1           0  0.63s           2024-03-29T01:39:19
+/opt/airflow/dags/test_airflow.py                             1           0  0.27s           2024-03-29T01:39:20
+================================================================================
+[2024-03-29T01:40:06.277+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.28s           2024-03-29T01:39:50
+/opt/airflow/dags/check_erros.py                              1           0  0.26s           2024-03-29T01:39:50
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T01:39:51
+================================================================================
+[2024-03-29T01:40:36.308+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.71s           2024-03-29T01:40:21
+/opt/airflow/dags/check_erros.py                              1           0  0.57s           2024-03-29T01:40:20
+/opt/airflow/dags/test_airflow.py                             1           0  0.35s           2024-03-29T01:40:22
+================================================================================
+[2024-03-29T01:41:06.770+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.24s           2024-03-29T01:40:51
+/opt/airflow/dags/check_erros.py                              1           0  0.23s           2024-03-29T01:40:51
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T01:40:52
+================================================================================
+[2024-03-29T01:41:36.784+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.62s           2024-03-29T01:41:22
+/opt/airflow/dags/check_erros.py                              1           0  0.56s           2024-03-29T01:41:22
+/opt/airflow/dags/test_airflow.py                             1           0  0.27s           2024-03-29T01:41:23
+================================================================================
+[2024-03-29T01:42:07.419+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.55s           2024-03-29T01:41:53
+/opt/airflow/dags/check_erros.py                              1           0  0.47s           2024-03-29T01:41:53
+/opt/airflow/dags/test_airflow.py                             1           0  0.32s           2024-03-29T01:41:54
+================================================================================
+[2024-03-29T01:42:36.880+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T01:42:36.883+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T01:42:37.916+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.26s           2024-03-29T01:42:23
+/opt/airflow/dags/check_erros.py                              1           0  0.25s           2024-03-29T01:42:23
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T01:42:24
+================================================================================
+[2024-03-29T01:43:08.426+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.30s           2024-03-29T01:42:54
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T01:42:54
+/opt/airflow/dags/test_airflow.py                             1           0  0.17s           2024-03-29T01:42:55
+================================================================================
+[2024-03-29T01:43:38.907+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.27s           2024-03-29T01:43:24
+/opt/airflow/dags/check_erros.py                              1           0  0.26s           2024-03-29T01:43:24
+/opt/airflow/dags/test_airflow.py                             1           0  0.24s           2024-03-29T01:43:26
+================================================================================
+[2024-03-29T01:44:09.369+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.26s           2024-03-29T01:43:55
+/opt/airflow/dags/check_erros.py                              1           0  0.23s           2024-03-29T01:43:55
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T01:43:56
+================================================================================
+[2024-03-29T01:44:39.913+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.34s           2024-03-29T01:44:25
+/opt/airflow/dags/check_erros.py                              1           0  0.30s           2024-03-29T01:44:25
+/opt/airflow/dags/test_airflow.py                             1           0  0.21s           2024-03-29T01:44:26
+================================================================================
+[2024-03-29T01:45:10.635+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.50s           2024-03-29T01:44:56
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.49s           2024-03-29T01:44:56
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T01:44:57
+================================================================================
+[2024-03-29T01:45:40.675+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.58s           2024-03-29T01:45:27
+/opt/airflow/dags/check_erros.py                              1           0  0.57s           2024-03-29T01:45:27
+/opt/airflow/dags/test_airflow.py                             1           0  0.28s           2024-03-29T01:45:28
+================================================================================
+[2024-03-29T01:46:10.987+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.33s           2024-03-29T01:45:57
+/opt/airflow/dags/check_erros.py                              1           0  0.32s           2024-03-29T01:45:57
+/opt/airflow/dags/test_airflow.py                             1           0  0.25s           2024-03-29T01:45:59
+================================================================================
+[2024-03-29T01:46:41.027+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.76s           2024-03-29T01:46:28
+/opt/airflow/dags/check_erros.py                              1           0  0.74s           2024-03-29T01:46:28
+/opt/airflow/dags/test_airflow.py                             1           0  0.57s           2024-03-29T01:46:30
+================================================================================
+[2024-03-29T01:47:11.183+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.74s           2024-03-29T01:46:59
+/opt/airflow/dags/check_erros.py                              1           0  0.71s           2024-03-29T01:46:59
+/opt/airflow/dags/test_airflow.py                             1           0  0.25s           2024-03-29T01:47:01
+================================================================================
+[2024-03-29T01:47:37.586+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T01:47:37.590+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T01:47:41.649+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.40s           2024-03-29T01:47:30
+/opt/airflow/dags/check_erros.py                              1           0  0.38s           2024-03-29T01:47:30
+/opt/airflow/dags/test_airflow.py                             1           0  0.16s           2024-03-29T01:47:31
+================================================================================
+[2024-03-29T01:48:12.177+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:48:01
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T01:48:01
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T01:48:02
+================================================================================
+[2024-03-29T01:48:42.686+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.28s           2024-03-29T01:48:31
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T01:48:31
+/opt/airflow/dags/test_airflow.py                             1           0  0.18s           2024-03-29T01:48:32
+================================================================================
+[2024-03-29T01:49:13.022+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.31s           2024-03-29T01:49:02
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:49:02
+/opt/airflow/dags/test_airflow.py                             1           0  0.15s           2024-03-29T01:49:03
+================================================================================
+[2024-03-29T01:49:43.848+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.57s           2024-03-29T01:49:32
+/opt/airflow/dags/check_erros.py                              1           0  0.55s           2024-03-29T01:49:32
+/opt/airflow/dags/test_airflow.py                             1           0  0.27s           2024-03-29T01:49:33
+================================================================================
+[2024-03-29T01:50:14.103+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  1.02s           2024-03-29T01:50:04
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.95s           2024-03-29T01:50:03
+/opt/airflow/dags/test_airflow.py                             1           0  0.49s           2024-03-29T01:50:04
+================================================================================
+[2024-03-29T01:50:44.555+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.26s           2024-03-29T01:50:34
+/opt/airflow/dags/check_erros.py                              1           0  0.25s           2024-03-29T01:50:34
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T01:50:35
+================================================================================
+[2024-03-29T01:51:15.054+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.29s           2024-03-29T01:51:04
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:51:04
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T01:51:06
+================================================================================
+[2024-03-29T01:51:45.585+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.33s           2024-03-29T01:51:35
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.31s           2024-03-29T01:51:35
+/opt/airflow/dags/test_airflow.py                             1           0  0.21s           2024-03-29T01:51:36
+================================================================================
+[2024-03-29T01:52:16.041+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.26s           2024-03-29T01:52:05
+/opt/airflow/dags/check_erros.py                              1           0  0.25s           2024-03-29T01:52:05
+/opt/airflow/dags/test_airflow.py                             1           0  0.16s           2024-03-29T01:52:07
+================================================================================
+[2024-03-29T01:52:37.694+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T01:52:37.697+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T01:52:46.601+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.35s           2024-03-29T01:52:36
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.34s           2024-03-29T01:52:36
+/opt/airflow/dags/test_airflow.py                             1           0  0.16s           2024-03-29T01:52:37
+================================================================================
+[2024-03-29T01:53:17.104+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:53:07
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T01:53:06
+/opt/airflow/dags/test_airflow.py                             1           0  0.21s           2024-03-29T01:53:08
+================================================================================
+[2024-03-29T01:53:47.482+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.51s           2024-03-29T01:53:37
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.50s           2024-03-29T01:53:37
+/opt/airflow/dags/test_airflow.py                             1           0  0.29s           2024-03-29T01:53:38
+================================================================================
+[2024-03-29T01:54:17.498+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.53s           2024-03-29T01:54:08
+/opt/airflow/dags/check_erros.py                              1           0  0.44s           2024-03-29T01:54:08
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T01:54:09
+================================================================================
+[2024-03-29T01:54:48.207+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.46s           2024-03-29T01:54:39
+/opt/airflow/dags/check_erros.py                              1           0  0.43s           2024-03-29T01:54:39
+/opt/airflow/dags/test_airflow.py                             1           0  0.28s           2024-03-29T01:54:40
+================================================================================
+[2024-03-29T01:55:18.708+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.30s           2024-03-29T01:55:09
+/opt/airflow/dags/check_erros.py                              1           0  0.28s           2024-03-29T01:55:09
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T01:55:10
+================================================================================
+[2024-03-29T01:55:49.214+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:55:40
+/opt/airflow/dags/check_erros.py                              1           0  0.26s           2024-03-29T01:55:40
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T01:55:41
+================================================================================
+[2024-03-29T01:56:19.749+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T01:56:10
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T01:56:10
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T01:56:11
+================================================================================
+[2024-03-29T01:56:50.289+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.30s           2024-03-29T01:56:41
+/opt/airflow/dags/check_erros.py                              1           0  0.28s           2024-03-29T01:56:41
+/opt/airflow/dags/test_airflow.py                             1           0  0.18s           2024-03-29T01:56:42
+================================================================================
+[2024-03-29T01:57:21.078+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.57s           2024-03-29T01:57:12
+/opt/airflow/dags/check_erros.py                              1           0  0.53s           2024-03-29T01:57:11
+/opt/airflow/dags/test_airflow.py                             1           0  0.17s           2024-03-29T01:57:13
+================================================================================
+[2024-03-29T01:57:38.174+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T01:57:38.178+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T01:57:51.611+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  1.23s           2024-03-29T01:57:43
+/opt/airflow/dags/check_erros.py                              1           0  1.04s           2024-03-29T01:57:43
+/opt/airflow/dags/test_airflow.py                             1           0  0.58s           2024-03-29T01:57:43
+================================================================================
+[2024-03-29T01:58:22.227+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.38s           2024-03-29T01:58:14
+/opt/airflow/dags/check_erros.py                              1           0  0.31s           2024-03-29T01:58:14
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T01:58:14
+================================================================================
+[2024-03-29T01:58:52.323+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  1.15s           2024-03-29T01:58:45
+/opt/airflow/dags/sourcetobucket.py                           1           0  1.13s           2024-03-29T01:58:45
+/opt/airflow/dags/test_airflow.py                             1           0  0.72s           2024-03-29T01:58:46
+================================================================================
+[2024-03-29T01:59:22.403+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.43s           2024-03-29T01:59:16
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.41s           2024-03-29T01:59:16
+/opt/airflow/dags/test_airflow.py                             1           0  0.18s           2024-03-29T01:59:17
+================================================================================
+[2024-03-29T01:59:52.775+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.34s           2024-03-29T01:59:46
+/opt/airflow/dags/check_erros.py                              1           0  0.34s           2024-03-29T01:59:46
+/opt/airflow/dags/test_airflow.py                             1           0  0.23s           2024-03-29T01:59:47
+================================================================================
+[2024-03-29T02:00:23.375+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.39s           2024-03-29T02:00:17
+/opt/airflow/dags/check_erros.py                              1           0  0.33s           2024-03-29T02:00:17
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T02:00:18
+================================================================================
+[2024-03-29T02:00:53.460+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  1.27s           2024-03-29T02:00:48
+/opt/airflow/dags/check_erros.py                              1           0  1.23s           2024-03-29T02:00:48
+/opt/airflow/dags/test_airflow.py                             1           0  0.63s           2024-03-29T02:00:49
+================================================================================
+[2024-03-29T02:01:23.955+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.72s           2024-03-29T02:01:19
+/opt/airflow/dags/test_airflow.py                             1           0  0.43s           2024-03-29T02:01:19
+/opt/airflow/dags/check_erros.py                              1           0  0.39s           2024-03-29T02:01:19
+================================================================================
+[2024-03-29T02:01:54.354+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  1.42s           2024-03-29T02:01:51
+/opt/airflow/dags/check_erros.py                              1           0  1.15s           2024-03-29T02:01:51
+/opt/airflow/dags/test_airflow.py                             1           0  0.99s           2024-03-29T02:01:52
+================================================================================
+[2024-03-29T02:02:24.635+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.79s           2024-03-29T02:02:23
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.32s           2024-03-29T02:02:22
+/opt/airflow/dags/check_erros.py                              1           0  0.25s           2024-03-29T02:02:21
+================================================================================
+[2024-03-29T02:02:38.254+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T02:02:38.270+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T02:02:54.704+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.64s           2024-03-29T02:02:53
+/opt/airflow/dags/test_airflow.py                             1           0  0.58s           2024-03-29T02:02:54
+/opt/airflow/dags/check_erros.py                              1           0  0.20s           2024-03-29T02:02:52
+================================================================================
+[2024-03-29T02:03:25.123+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py      866  0.01s             1           0  0.58s           2024-03-29T02:02:54
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.24s           2024-03-29T02:03:24
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:03:23
+================================================================================
+[2024-03-29T02:03:55.636+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.31s           2024-03-29T02:03:53
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.27s           2024-03-29T02:03:54
+/opt/airflow/dags/test_airflow.py      875  0.01s             1           0  0.17s           2024-03-29T02:03:25
+================================================================================
+[2024-03-29T02:04:26.139+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.39s           2024-03-29T02:04:25
+/opt/airflow/dags/check_erros.py                              1           0  0.20s           2024-03-29T02:04:24
+/opt/airflow/dags/test_airflow.py      884  0.02s             1           0  0.16s           2024-03-29T02:03:55
+================================================================================
+[2024-03-29T02:04:56.753+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py      892  0.01s             1           0  0.33s           2024-03-29T02:04:26
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.23s           2024-03-29T02:04:55
+/opt/airflow/dags/check_erros.py                              1           0  0.19s           2024-03-29T02:04:54
+================================================================================
+[2024-03-29T02:05:27.430+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.31s           2024-03-29T02:05:26
+/opt/airflow/dags/check_erros.py                              1           0  0.29s           2024-03-29T02:05:25
+/opt/airflow/dags/test_airflow.py      901  0.04s             1           0  0.25s           2024-03-29T02:04:56
+================================================================================
+[2024-03-29T02:05:57.871+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py      910  0.01s             1           0  0.43s           2024-03-29T02:05:27
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.23s           2024-03-29T02:05:56
+/opt/airflow/dags/check_erros.py                              1           0  0.17s           2024-03-29T02:05:55
+================================================================================
+[2024-03-29T02:06:28.337+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:06:26
+/opt/airflow/dags/test_airflow.py      920  0.01s             1           0  0.21s           2024-03-29T02:05:58
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.19s           2024-03-29T02:06:27
+================================================================================
+[2024-03-29T02:06:58.834+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py      929  0.01s             1           0  0.24s           2024-03-29T02:06:28
+/opt/airflow/dags/check_erros.py                              1           0  0.19s           2024-03-29T02:06:56
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.18s           2024-03-29T02:06:57
+================================================================================
+[2024-03-29T02:07:29.395+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T02:07:27
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.25s           2024-03-29T02:07:28
+/opt/airflow/dags/test_airflow.py      938  0.01s             1           0  0.21s           2024-03-29T02:06:59
+================================================================================
+[2024-03-29T02:07:38.528+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T02:07:38.533+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T02:08:00.348+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.57s           2024-03-29T02:07:59
+/opt/airflow/dags/check_erros.py                              1           0  0.54s           2024-03-29T02:07:58
+/opt/airflow/dags/test_airflow.py      947  0.04s             1           0  0.22s           2024-03-29T02:07:29
+================================================================================
+[2024-03-29T02:08:30.806+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.58s           2024-03-29T02:08:00
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.26s           2024-03-29T02:08:29
+/opt/airflow/dags/check_erros.py                              1           0  0.19s           2024-03-29T02:08:28
+================================================================================
+[2024-03-29T02:09:01.350+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.24s           2024-03-29T02:09:00
+/opt/airflow/dags/check_erros.py                              1           0  0.21s           2024-03-29T02:08:59
+/opt/airflow/dags/test_airflow.py      965  0.01s             1           0  0.20s           2024-03-29T02:08:31
+================================================================================
+[2024-03-29T02:09:32.097+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.32s           2024-03-29T02:09:30
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.31s           2024-03-29T02:09:31
+/opt/airflow/dags/test_airflow.py      974  0.02s             1           0  0.24s           2024-03-29T02:09:01
+================================================================================
+[2024-03-29T02:10:02.345+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.36s           2024-03-29T02:09:32
+/opt/airflow/dags/check_erros.py                              1           0  0.21s           2024-03-29T02:10:00
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.18s           2024-03-29T02:10:01
+================================================================================
+[2024-03-29T02:10:32.959+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py      992  0.01s             1           0  0.29s           2024-03-29T02:10:02
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.25s           2024-03-29T02:10:31
+/opt/airflow/dags/check_erros.py                              1           0  0.23s           2024-03-29T02:10:30
+================================================================================
+[2024-03-29T02:11:03.412+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.28s           2024-03-29T02:11:02
+/opt/airflow/dags/test_airflow.py     1001  0.01s             1           0  0.24s           2024-03-29T02:10:33
+/opt/airflow/dags/check_erros.py                              1           0  0.21s           2024-03-29T02:11:01
+================================================================================
+[2024-03-29T02:11:33.828+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.25s           2024-03-29T02:11:33
+/opt/airflow/dags/test_airflow.py     1010  0.01s             1           0  0.22s           2024-03-29T02:11:03
+/opt/airflow/dags/check_erros.py                              1           0  0.20s           2024-03-29T02:11:31
+================================================================================
+[2024-03-29T02:12:04.385+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.34s           2024-03-29T02:12:03
+/opt/airflow/dags/check_erros.py                              1           0  0.31s           2024-03-29T02:12:02
+/opt/airflow/dags/test_airflow.py     1019  0.01s             1           0  0.20s           2024-03-29T02:11:34
+================================================================================
+[2024-03-29T02:12:35.071+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1028  0.01s             1           0  0.49s           2024-03-29T02:12:04
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.41s           2024-03-29T02:12:34
+/opt/airflow/dags/check_erros.py                              1           0  0.29s           2024-03-29T02:12:33
+================================================================================
+[2024-03-29T02:12:39.210+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T02:12:39.228+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T02:13:05.714+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1037  0.01s             1           0  0.36s           2024-03-29T02:12:35
+/opt/airflow/dags/check_erros.py                              1           0  0.19s           2024-03-29T02:13:03
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.18s           2024-03-29T02:13:04
+================================================================================
+[2024-03-29T02:13:36.342+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1046  0.02s             1           0  0.35s           2024-03-29T02:13:06
+/opt/airflow/dags/check_erros.py                              1           0  0.33s           2024-03-29T02:13:34
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.32s           2024-03-29T02:13:35
+================================================================================
+[2024-03-29T02:14:06.979+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1055  0.01s             1           0  0.48s           2024-03-29T02:13:36
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.22s           2024-03-29T02:14:05
+/opt/airflow/dags/check_erros.py                              1           0  0.21s           2024-03-29T02:14:04
+================================================================================
+[2024-03-29T02:14:37.411+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1065  0.01s             1           0  0.25s           2024-03-29T02:14:07
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.23s           2024-03-29T02:14:36
+/opt/airflow/dags/check_erros.py                              1           0  0.21s           2024-03-29T02:14:35
+================================================================================
+[2024-03-29T02:15:07.855+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.23s           2024-03-29T02:15:06
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:15:05
+/opt/airflow/dags/test_airflow.py     1073  0.01s             1           0  0.18s           2024-03-29T02:14:37
+================================================================================
+[2024-03-29T02:15:38.537+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.42s           2024-03-29T02:15:37
+/opt/airflow/dags/check_erros.py                              1           0  0.33s           2024-03-29T02:15:36
+/opt/airflow/dags/test_airflow.py     1088  0.01s             1           0  0.28s           2024-03-29T02:15:08
+================================================================================
+[2024-03-29T02:16:09.091+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1097  0.01s             1           0  0.47s           2024-03-29T02:15:38
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.23s           2024-03-29T02:16:08
+/opt/airflow/dags/check_erros.py                              1           0  0.18s           2024-03-29T02:16:07
+================================================================================
+[2024-03-29T02:16:39.702+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.43s           2024-03-29T02:16:38
+/opt/airflow/dags/check_erros.py                              1           0  0.31s           2024-03-29T02:16:37
+/opt/airflow/dags/test_airflow.py     1106  0.01s             1           0  0.20s           2024-03-29T02:16:09
+================================================================================
+[2024-03-29T02:17:10.314+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1115  0.01s             1           0  0.34s           2024-03-29T02:16:40
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.23s           2024-03-29T02:17:09
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:17:08
+================================================================================
+[2024-03-29T02:17:39.738+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T02:17:39.743+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T02:17:40.835+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.55s           2024-03-29T02:17:39
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.36s           2024-03-29T02:17:40
+/opt/airflow/dags/test_airflow.py     1124  0.01s             1           0  0.27s           2024-03-29T02:17:10
+================================================================================
+[2024-03-29T02:18:11.450+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1133  0.01s             1           0  0.45s           2024-03-29T02:17:41
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T02:18:09
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.21s           2024-03-29T02:18:10
+================================================================================
+[2024-03-29T02:18:42.062+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1142  0.01s             1           0  0.28s           2024-03-29T02:18:11
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.23s           2024-03-29T02:18:41
+/opt/airflow/dags/check_erros.py                              1           0  0.19s           2024-03-29T02:18:40
+================================================================================
+[2024-03-29T02:19:12.566+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1151  0.01s             1           0  0.25s           2024-03-29T02:18:42
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:19:10
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.18s           2024-03-29T02:19:11
+================================================================================
+[2024-03-29T02:19:43.187+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.44s           2024-03-29T02:19:42
+/opt/airflow/dags/check_erros.py                              1           0  0.33s           2024-03-29T02:19:41
+/opt/airflow/dags/test_airflow.py     1160  0.01s             1           0  0.16s           2024-03-29T02:19:12
+================================================================================
+[2024-03-29T02:20:13.767+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1169  0.01s             1           0  0.36s           2024-03-29T02:19:43
+/opt/airflow/dags/check_erros.py                              1           0  0.19s           2024-03-29T02:20:11
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.18s           2024-03-29T02:20:12
+================================================================================
+[2024-03-29T02:20:44.278+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py     1178  0.01s             1           0  0.27s           2024-03-29T02:20:14
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.20s           2024-03-29T02:20:43
+/opt/airflow/dags/check_erros.py                              1           0  0.20s           2024-03-29T02:20:42
+================================================================================
+[2024-03-29T02:21:14.844+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:21:12
+/opt/airflow/dags/test_airflow.py     1186  0.01s             1           0  0.21s           2024-03-29T02:20:44
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.19s           2024-03-29T02:21:13
+================================================================================
+[2024-03-29T02:21:45.200+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.84s           2024-03-29T02:21:45
+/opt/airflow/dags/check_erros.py                              1           0  0.62s           2024-03-29T02:21:43
+/opt/airflow/dags/test_airflow.py     1195  0.03s             1           0  0.21s           2024-03-29T02:21:15
+================================================================================
+[2024-03-29T02:22:15.414+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.68s           2024-03-29T02:21:45
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:22:14
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.21s           2024-03-29T02:22:15
+================================================================================
+[2024-03-29T02:22:40.384+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T02:22:40.389+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T02:22:45.601+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1212  0.01s             1           0  0.21s           2024-03-29T02:22:15
+/opt/airflow/dags/check_erros.py                              1           0  0.20s           2024-03-29T02:22:44
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T02:22:16
+================================================================================
+[2024-03-29T02:23:16.092+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.29s           2024-03-29T02:23:15
+/opt/airflow/dags/sourcetobucket.py   1221  0.01s             1           0  0.25s           2024-03-29T02:22:45
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:22:46
+================================================================================
+[2024-03-29T02:23:46.492+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.26s           2024-03-29T02:23:45
+/opt/airflow/dags/sourcetobucket.py   1230  0.01s             1           0  0.21s           2024-03-29T02:23:16
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:23:17
+================================================================================
+[2024-03-29T02:24:17.274+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.45s           2024-03-29T02:24:16
+/opt/airflow/dags/test_airflow.py                             1           0  0.35s           2024-03-29T02:23:48
+/opt/airflow/dags/sourcetobucket.py   1240  0.01s             1           0  0.32s           2024-03-29T02:23:46
+================================================================================
+[2024-03-29T02:24:47.916+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1249  0.01s             1           0  0.41s           2024-03-29T02:24:17
+/opt/airflow/dags/check_erros.py                              1           0  0.21s           2024-03-29T02:24:47
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T02:24:18
+================================================================================
+[2024-03-29T02:25:18.496+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1258  0.01s             1           0  0.31s           2024-03-29T02:24:48
+/opt/airflow/dags/check_erros.py                              1           0  0.23s           2024-03-29T02:25:17
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:24:49
+================================================================================
+[2024-03-29T02:25:49.094+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.30s           2024-03-29T02:25:48
+/opt/airflow/dags/sourcetobucket.py   1267  0.03s             1           0  0.28s           2024-03-29T02:25:18
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:25:19
+================================================================================
+[2024-03-29T02:26:19.818+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1276  0.01s             1           0  0.50s           2024-03-29T02:25:49
+/opt/airflow/dags/test_airflow.py                             1           0  0.31s           2024-03-29T02:25:50
+/opt/airflow/dags/check_erros.py                              1           0  0.21s           2024-03-29T02:26:18
+================================================================================
+[2024-03-29T02:26:50.432+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1285  0.01s             1           0  0.33s           2024-03-29T02:26:20
+/opt/airflow/dags/test_airflow.py                             1           0  0.24s           2024-03-29T02:26:21
+/opt/airflow/dags/check_erros.py                              1           0  0.20s           2024-03-29T02:26:49
+================================================================================
+[2024-03-29T02:27:21.044+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1295  0.07s             1           0  0.33s           2024-03-29T02:26:50
+/opt/airflow/dags/check_erros.py                              1           0  0.30s           2024-03-29T02:27:20
+/opt/airflow/dags/test_airflow.py                             1           0  0.18s           2024-03-29T02:26:51
+================================================================================
+[2024-03-29T02:27:40.603+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T02:27:40.608+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T02:27:51.759+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1305  0.01s             1           0  0.51s           2024-03-29T02:27:21
+/opt/airflow/dags/test_airflow.py                             1           0  0.26s           2024-03-29T02:27:22
+/opt/airflow/dags/check_erros.py                              1           0  0.19s           2024-03-29T02:27:50
+================================================================================
+[2024-03-29T02:28:22.281+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1314  0.01s             1           0  0.27s           2024-03-29T02:27:52
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:27:53
+/opt/airflow/dags/check_erros.py                              1           0  0.19s           2024-03-29T02:28:21
+================================================================================
+[2024-03-29T02:28:52.780+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.20s           2024-03-29T02:28:51
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T02:28:23
+/opt/airflow/dags/sourcetobucket.py   1323  0.01s             1           0  0.18s           2024-03-29T02:28:22
+================================================================================
+[2024-03-29T02:29:23.250+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1332  0.01s             1           0  0.26s           2024-03-29T02:28:53
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:28:54
+/opt/airflow/dags/check_erros.py                              1           0  0.18s           2024-03-29T02:29:22
+================================================================================
+[2024-03-29T02:29:53.801+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.32s           2024-03-29T02:29:52
+/opt/airflow/dags/sourcetobucket.py   1341  0.01s             1           0  0.23s           2024-03-29T02:29:23
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:29:24
+================================================================================
+[2024-03-29T02:30:24.348+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1350  0.01s             1           0  0.30s           2024-03-29T02:29:54
+/opt/airflow/dags/check_erros.py                              1           0  0.24s           2024-03-29T02:30:23
+/opt/airflow/dags/test_airflow.py                             1           0  0.17s           2024-03-29T02:29:55
+================================================================================
+[2024-03-29T02:30:55.026+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1359  0.01s             1           0  0.35s           2024-03-29T02:30:24
+/opt/airflow/dags/test_airflow.py                             1           0  0.33s           2024-03-29T02:30:25
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:30:54
+================================================================================
+[2024-03-29T02:31:25.491+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T02:31:24
+/opt/airflow/dags/sourcetobucket.py   1368  0.01s             1           0  0.23s           2024-03-29T02:30:55
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:30:56
+================================================================================
+[2024-03-29T02:31:56.159+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1377  0.01s             1           0  0.30s           2024-03-29T02:31:25
+/opt/airflow/dags/test_airflow.py                             1           0  0.27s           2024-03-29T02:31:26
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:31:55
+================================================================================
+[2024-03-29T02:32:26.528+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1385  0.01s             1           0  0.23s           2024-03-29T02:31:56
+/opt/airflow/dags/check_erros.py                              1           0  0.21s           2024-03-29T02:32:25
+/opt/airflow/dags/test_airflow.py                             1           0  0.16s           2024-03-29T02:31:57
+================================================================================
+[2024-03-29T02:32:40.821+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T02:32:40.827+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T02:32:57.023+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.21s           2024-03-29T02:32:27
+/opt/airflow/dags/sourcetobucket.py   1395  0.01s             1           0  0.19s           2024-03-29T02:32:26
+/opt/airflow/dags/check_erros.py                              1           0  0.18s           2024-03-29T02:32:56
+================================================================================
+[2024-03-29T02:33:27.600+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.25s           2024-03-29T02:32:58
+/opt/airflow/dags/sourcetobucket.py   1404  0.01s             1           0  0.23s           2024-03-29T02:32:57
+/opt/airflow/dags/check_erros.py                              1           0  0.20s           2024-03-29T02:33:26
+================================================================================
+[2024-03-29T02:33:58.026+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.28s           2024-03-29T02:33:57
+/opt/airflow/dags/sourcetobucket.py   1413  0.01s             1           0  0.21s           2024-03-29T02:33:27
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:33:28
+================================================================================
+[2024-03-29T02:34:28.429+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.25s           2024-03-29T02:34:27
+/opt/airflow/dags/sourcetobucket.py   1422  0.01s             1           0  0.22s           2024-03-29T02:33:58
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:33:59
+================================================================================
+[2024-03-29T02:34:59.165+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1431  0.01s             1           0  0.33s           2024-03-29T02:34:28
+/opt/airflow/dags/check_erros.py                              1           0  0.30s           2024-03-29T02:34:58
+/opt/airflow/dags/test_airflow.py                             1           0  0.27s           2024-03-29T02:34:29
+================================================================================
+[2024-03-29T02:35:29.698+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.36s           2024-03-29T02:35:28
+/opt/airflow/dags/sourcetobucket.py   1440  0.01s             1           0  0.25s           2024-03-29T02:34:59
+/opt/airflow/dags/test_airflow.py                             1           0  0.21s           2024-03-29T02:35:00
+================================================================================
+[2024-03-29T02:36:00.423+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1449  0.01s             1           0  0.42s           2024-03-29T02:35:30
+/opt/airflow/dags/test_airflow.py                             1           0  0.27s           2024-03-29T02:35:31
+/opt/airflow/dags/check_erros.py                              1           0  0.25s           2024-03-29T02:35:59
+================================================================================
+[2024-03-29T02:36:31.049+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.29s           2024-03-29T02:36:01
+/opt/airflow/dags/check_erros.py                              1           0  0.25s           2024-03-29T02:36:30
+/opt/airflow/dags/sourcetobucket.py   1458  0.01s             1           0  0.23s           2024-03-29T02:36:00
+================================================================================
+[2024-03-29T02:37:01.525+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.55s           2024-03-29T02:37:00
+/opt/airflow/dags/sourcetobucket.py   1467  0.01s             1           0  0.26s           2024-03-29T02:36:31
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:36:32
+================================================================================
+[2024-03-29T02:37:32.027+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.33s           2024-03-29T02:37:31
+/opt/airflow/dags/sourcetobucket.py   1476  0.01s             1           0  0.29s           2024-03-29T02:37:01
+/opt/airflow/dags/test_airflow.py                             1           0  0.29s           2024-03-29T02:37:02
+================================================================================
+[2024-03-29T02:37:41.108+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T02:37:41.111+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T02:38:02.490+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1485  0.01s             1           0  0.33s           2024-03-29T02:37:32
+/opt/airflow/dags/check_erros.py                              1           0  0.30s           2024-03-29T02:38:01
+/opt/airflow/dags/test_airflow.py                             1           0  0.25s           2024-03-29T02:37:33
+================================================================================
+[2024-03-29T02:38:32.916+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.21s           2024-03-29T02:38:03
+/opt/airflow/dags/sourcetobucket.py   1495  0.01s             1           0  0.21s           2024-03-29T02:38:02
+/opt/airflow/dags/check_erros.py                              1           0  0.17s           2024-03-29T02:38:32
+================================================================================
+[2024-03-29T02:39:03.493+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1505  0.01s             1           0  0.30s           2024-03-29T02:38:33
+/opt/airflow/dags/test_airflow.py                             1           0  0.26s           2024-03-29T02:38:34
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:39:02
+================================================================================
+[2024-03-29T02:39:34.041+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.30s           2024-03-29T02:39:33
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T02:39:04
+/opt/airflow/dags/sourcetobucket.py   1514  0.01s             1           0  0.22s           2024-03-29T02:39:03
+================================================================================
+[2024-03-29T02:40:04.724+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1523  0.01s             1           0  0.36s           2024-03-29T02:39:34
+/opt/airflow/dags/test_airflow.py                             1           0  0.31s           2024-03-29T02:39:35
+/opt/airflow/dags/check_erros.py                              1           0  0.27s           2024-03-29T02:40:03
+================================================================================
+[2024-03-29T02:40:35.291+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.29s           2024-03-29T02:40:34
+/opt/airflow/dags/sourcetobucket.py   1532  0.01s             1           0  0.21s           2024-03-29T02:40:04
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:40:06
+================================================================================
+[2024-03-29T02:41:05.824+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.30s           2024-03-29T02:41:04
+/opt/airflow/dags/sourcetobucket.py   1541  0.01s             1           0  0.24s           2024-03-29T02:40:35
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T02:40:36
+================================================================================
+[2024-03-29T02:41:36.478+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1550  0.01s             1           0  0.29s           2024-03-29T02:41:06
+/opt/airflow/dags/check_erros.py                              1           0  0.22s           2024-03-29T02:41:35
+/opt/airflow/dags/test_airflow.py                             1           0  0.20s           2024-03-29T02:41:07
+================================================================================
+[2024-03-29T02:42:07.040+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py   1559  0.01s             1           0  0.37s           2024-03-29T02:41:36
+/opt/airflow/dags/check_erros.py                              1           0  0.32s           2024-03-29T02:42:06
+/opt/airflow/dags/test_airflow.py                             1           0  0.28s           2024-03-29T02:41:37
+================================================================================
+[2024-03-29T02:42:37.507+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.24s           2024-03-29T02:42:36
+/opt/airflow/dags/sourcetobucket.py   1568  0.01s             1           0  0.23s           2024-03-29T02:42:07
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T02:42:08
+================================================================================
+[2024-03-29T02:42:41.943+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-03-29T02:42:41.946+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2024-03-29T02:43:07.534+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.41s           2024-03-29T02:42:37
+/opt/airflow/dags/check_erros.py                              1           0  0.41s           2024-03-29T02:43:07
+/opt/airflow/dags/test_airflow.py                             1           0  0.32s           2024-03-29T02:42:39
+================================================================================
+[2024-03-29T02:43:37.607+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py      1585  0.01s             1           0  0.41s           2024-03-29T02:43:07
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.21s           2024-03-29T02:43:08
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T02:43:09
+================================================================================
+[2024-03-29T02:44:07.834+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.39s           2024-03-29T02:43:37
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.30s           2024-03-29T02:43:38
+/opt/airflow/dags/test_airflow.py                             1           0  0.25s           2024-03-29T02:43:39
+================================================================================
+[2024-03-29T02:44:38.564+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/check_erros.py                              1           0  0.52s           2024-03-29T02:44:08
+/opt/airflow/dags/test_airflow.py                             1           0  0.34s           2024-03-29T02:44:10
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.29s           2024-03-29T02:44:09
+================================================================================
+[2024-03-29T02:45:09.079+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.26s           2024-03-29T02:44:39
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T02:44:40
+/opt/airflow/dags/check_erros.py      1614  0.02s             1           0  0.17s           2024-03-29T02:44:38
+================================================================================
+[2024-03-29T02:45:39.556+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-29T02:45:11
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.22s           2024-03-29T02:45:10
+/opt/airflow/dags/check_erros.py      1623  0.01s             1           0  0.21s           2024-03-29T02:45:09
+================================================================================
+[2024-03-29T02:46:10.110+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.25s           2024-03-29T02:45:40
+/opt/airflow/dags/check_erros.py      1631  0.01s             1           0  0.19s           2024-03-29T02:45:39
+/opt/airflow/dags/test_airflow.py                             1           0  0.19s           2024-03-29T02:45:41
+================================================================================
+[2024-03-29T02:46:40.712+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.23s           2024-03-29T02:46:12
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.23s           2024-03-29T02:46:11
+/opt/airflow/dags/check_erros.py      1640  0.06s             1           0  0.22s           2024-03-29T02:46:10
+================================================================================

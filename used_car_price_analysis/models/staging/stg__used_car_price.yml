@@ -18,26 +18,26 @@ models:
 
       - name: additional_design
         data_type: string
-        description: ""
+        description: "{{ doc('additional_design') }}"
 
       - name: body_type
         data_type: string
-        description: ""
+        description: "{{ doc('body_type') }}"
 
       - name: transmission
         data_type: string
-        description: ""
+        description: "{{ doc('transmission') }}"
 
       - name: vechicle_id_number
         data_type: string
-        description: ""
+        description: "{{ doc('vechicle_id_number') }}"
         tests:
           - not_null
         
 
       - name: state
         data_type: string
-        description: ""
+        description: "{{ doc('state') }}"
         tests:
           - not_null
           - relationships:
@@ -46,39 +46,39 @@ models:
 
       - name: condition
         data_type: float64
-        description: "Condition of the vehicle, possibly rated on a scale."
+        description: "{{ doc('condition') }}"
 
       - name: odometer
         data_type: float64
-        description: "The mileage or distance traveled by the vehicle."
+        description: "{{ doc('odometer') }}"
 
       - name: color
         data_type: string
-        description: "Exterior color of the vehicle."
+        description: "{{ doc('color') }}"
 
       - name: interior
         data_type: string
-        description: "Interior color of the vehicle."
+        description: "{{ doc('interior') }}"
 
       - name: seller
         data_type: string
-        description: "The entity selling the vehicle."
+        description: "{{ doc('seller') }}"
         tests:
           - not_null 
 
 
       - name: manheim_market_report
         data_type: float64
-        description: "Manheim Market Report, possibly indicating the estimated market value of the vehicle."
+        description: "{{ doc('manheim_market_report') }}"
 
       - name: sellingprice
         data_type: float64
-        description: "The price at which the vehicle was sold"
+        description: "{{ doc('sellingprice') }}"
         tests:
           - not_null 
         
       - name: saledate
         data_type: timestamp
-        description: "The date and time when the vehicle was sold."
+        description: "{{ doc('saledate') }}"
         tests: 
           - not_null

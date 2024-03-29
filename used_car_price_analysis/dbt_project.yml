@@ -32,12 +32,20 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   used_car_price_analysis:
+
     # Config indicated by + and applies to all files under models/example/
+
+    # If the target name is not production then the table will be automatically deleter within a wee
+
+      #   {{ target.name != 'production' }}: 168  
+
       +materialized: table 
       +persist_docs:
         relation: true
         columns: true
-
+      
+      marts: 
+          +materialized: view
 
 tests:
   used_car_price_analysis:

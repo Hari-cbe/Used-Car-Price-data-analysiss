@@ -1,3 +1,8 @@
+{{
+    config(materialized='view')
+}}
+
+
 select 
     make, 
     model, 

@@ -1,3 +1,8 @@
+{{
+    config(materialized='view')
+}}
+
+
 with states as (
     select state, state_abbrivation from {{ref('stg__state_abbrivation')}}
 ),

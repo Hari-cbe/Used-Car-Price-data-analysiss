@@ -30,4 +30,36 @@
     The state where the vehicle is registered
 {% enddocs %}
 
+{% docs color %}
+    Exterior color of the vehicle.
+{% enddocs %}
+
+{% docs condition %}
+    Condition of the vehicle, possibly rated on a scale.
+{% enddocs %}
+
+{% docs odometer %}
+    The mileage or distance traveled by the vehicle.
+{% enddocs %}
+
+{% docs interior %}
+    Interior color of the vehicle.
+{% enddocs %}
+
+{% docs seller %}
+    The entity selling the vehicle.
+{% enddocs %}
+
+{% docs manheim_market_report %}
+    Manheim Market Report, possibly indicating the estimated market value of the vehicle.
+{% enddocs %}
+
+{% docs sellingprice %}
+    The price at which the vehicle was sold
+{% enddocs %}
+
+{% docs saledate %}
+    The date and time when the vehicle was sold.
+{% enddocs %}
+
 
