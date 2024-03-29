@@ -33,15 +33,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   used_car_price_analysis:
     # Config indicated by + and applies to all files under models/example/
-    staging:
       +materialized: table 
-
-    intermediate:
-      +materialized: table
-
-    +persist_docs:
-      relation: true
-      columns: true
+      +persist_docs:
+        relation: true
+        columns: true
 
 
 tests:

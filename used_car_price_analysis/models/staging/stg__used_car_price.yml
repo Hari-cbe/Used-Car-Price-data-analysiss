@@ -18,26 +18,26 @@ models:
 
       - name: additional_design
         data_type: string
-        description: "additional designation for the vehicle model."
+        description: ""
 
       - name: body_type
         data_type: string
-        description: "The body type of the vehicle (e.g., SUV, Sedan)."
+        description: ""
 
       - name: transmission
         data_type: string
-        description: "The type of transmission in the vehicle (e.g., automatic)."
+        description: ""
 
       - name: vechicle_id_number
         data_type: string
-        description: "Vehicle Identification Number, a unique code for each vehicle."
+        description: ""
         tests:
           - not_null
         
 
       - name: state
         data_type: string
-        description: "The state where the vehicle is registered"
+        description: ""
         tests:
           - not_null
           - relationships:

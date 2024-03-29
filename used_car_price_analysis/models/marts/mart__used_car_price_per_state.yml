@@ -1,0 +1,40 @@
+
+models:
+  - name: mart__used_car_price_per_state
+    description: ""
+    columns:
+      - name: vechicle_id_number
+        data_type: string
+        description: ""
+        tests:
+          - not_null
+
+      - name: state
+        data_type: string
+        description: ""
+        tests:
+          - not_null
+
+      - name: makers
+        data_type: string
+        description: ""
+        tests:
+          - not_null
+
+      - name: odometer
+        data_type: float64
+        description: ""
+        tests:
+          - not_null
+
+      - name: sellingprice
+        data_type: float64
+        description: ""
+        tests:
+          - not_null
+
+      - name: saledate
+        data_type: date
+        description: ""
+        tests:
+          - not_null
