@@ -1888,3 +1888,24 @@
 [2024-03-29T11:54:39.389+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:54:39.388+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2024-03-29T11:54:39.506+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:54:39.505+0000] {dag.py:3834} INFO - Setting next_dagrun for source_to_gcs to 2024-03-28 00:00:00+00:00, run_after=2024-03-29 00:00:00+00:00
 [2024-03-29T11:54:39.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sourcetobucket.py took 0.299 seconds
+[2024-03-29T11:55:09.805+0000] {processor.py:161} INFO - Started process (PID=913) to work on /opt/airflow/dags/sourcetobucket.py
+[2024-03-29T11:55:09.808+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sourcetobucket.py for tasks to queue
+[2024-03-29T11:55:09.812+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:55:09.811+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/sourcetobucket.py
+[2024-03-29T11:55:09.868+0000] {processor.py:840} INFO - DAG(s) 'source_to_gcs' retrieved from /opt/airflow/dags/sourcetobucket.py
+[2024-03-29T11:55:09.930+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:55:09.930+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-29T11:55:09.989+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:55:09.988+0000] {dag.py:3834} INFO - Setting next_dagrun for source_to_gcs to 2024-03-28 00:00:00+00:00, run_after=2024-03-29 00:00:00+00:00
+[2024-03-29T11:55:10.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sourcetobucket.py took 0.237 seconds
+[2024-03-29T11:55:40.282+0000] {processor.py:161} INFO - Started process (PID=922) to work on /opt/airflow/dags/sourcetobucket.py
+[2024-03-29T11:55:40.324+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sourcetobucket.py for tasks to queue
+[2024-03-29T11:55:40.329+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:55:40.328+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/sourcetobucket.py
+[2024-03-29T11:55:40.470+0000] {processor.py:840} INFO - DAG(s) 'source_to_gcs' retrieved from /opt/airflow/dags/sourcetobucket.py
+[2024-03-29T11:55:40.546+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:55:40.546+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-29T11:55:40.735+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:55:40.734+0000] {dag.py:3834} INFO - Setting next_dagrun for source_to_gcs to 2024-03-28 00:00:00+00:00, run_after=2024-03-29 00:00:00+00:00
+[2024-03-29T11:55:40.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sourcetobucket.py took 0.608 seconds
+[2024-03-29T11:56:11.202+0000] {processor.py:161} INFO - Started process (PID=932) to work on /opt/airflow/dags/sourcetobucket.py
+[2024-03-29T11:56:11.205+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sourcetobucket.py for tasks to queue
+[2024-03-29T11:56:11.216+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:56:11.215+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/sourcetobucket.py
+[2024-03-29T11:56:11.268+0000] {processor.py:840} INFO - DAG(s) 'source_to_gcs' retrieved from /opt/airflow/dags/sourcetobucket.py
+[2024-03-29T11:56:11.332+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:56:11.331+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-29T11:56:11.457+0000] {logging_mixin.py:188} INFO - [2024-03-29T11:56:11.450+0000] {dag.py:3834} INFO - Setting next_dagrun for source_to_gcs to 2024-03-28 00:00:00+00:00, run_after=2024-03-29 00:00:00+00:00
+[2024-03-29T11:56:11.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sourcetobucket.py took 0.335 seconds
