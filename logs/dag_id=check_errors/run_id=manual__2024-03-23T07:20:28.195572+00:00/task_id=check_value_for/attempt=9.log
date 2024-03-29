@@ -1,0 +1,23 @@
+[2024-03-23T10:36:21.937+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: check_errors.check_value_for manual__2024-03-23T07:20:28.195572+00:00 [queued]>
+[2024-03-23T10:36:21.953+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: check_errors.check_value_for manual__2024-03-23T07:20:28.195572+00:00 [queued]>
+[2024-03-23T10:36:21.953+0000] {taskinstance.py:2193} INFO - Starting attempt 9 of 9
+[2024-03-23T10:36:21.979+0000] {taskinstance.py:2217} INFO - Executing <Task(PythonOperator): check_value_for> on 2024-03-23 07:20:28.195572+00:00
+[2024-03-23T10:36:21.993+0000] {standard_task_runner.py:60} INFO - Started process 4572 to run task
+[2024-03-23T10:36:22.003+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'check_errors', 'check_value_for', 'manual__2024-03-23T07:20:28.195572+00:00', '--job-id', '319', '--raw', '--subdir', 'DAGS_FOLDER/check_erros.py', '--cfg-path', '/tmp/tmpgilc9t7q']
+[2024-03-23T10:36:22.009+0000] {standard_task_runner.py:88} INFO - Job 319: Subtask check_value_for
+[2024-03-23T10:36:22.103+0000] {task_command.py:423} INFO - Running <TaskInstance: check_errors.check_value_for manual__2024-03-23T07:20:28.195572+00:00 [running]> on host ceb99a37e23c
+[2024-03-23T10:36:22.241+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='check_errors' AIRFLOW_CTX_TASK_ID='check_value_for' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T07:20:28.195572+00:00' AIRFLOW_CTX_TRY_NUMBER='9' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-23T07:20:28.195572+00:00'
+[2024-03-23T10:36:22.247+0000] {sql.py:785} INFO - Executing SQL check: SELECT COUNT(*) from used_car_analysis_dataset.used_car_price LIMIT 1
+[2024-03-23T10:36:22.264+0000] {connection.py:269} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2024-03-23T10:36:22.268+0000] {base.py:83} INFO - Using connection ID 'gcp_***_conn' for task execution.
+[2024-03-23T10:36:22.342+0000] {sql.py:457} INFO - Running statement: SELECT COUNT(*) from used_car_analysis_dataset.used_car_price LIMIT 1, parameters: None
+[2024-03-23T10:36:22.344+0000] {bigquery.py:1613} INFO - Inserting job ***_1711190182343261_692f6613f62229254217b4d9e55504a9
+[2024-03-23T10:36:22.919+0000] {check_erros.py:51} ERROR - BigQuery check failed: 404 Not found: Table used-car-analysis:used_car_analysis_dataset.used_car_price was not found in location US; reason: notFound, message: Not found: Table used-car-analysis:used_car_analysis_dataset.used_car_price was not found in location US
+
+Location: US
+Job ID: ***_1711190182343261_692f6613f62229254217b4d9e55504a9
+
+[2024-03-23T10:36:22.920+0000] {python.py:202} INFO - Done. Returned value was: CAR_PRICE_TABLE_not_found
+[2024-03-23T10:36:22.974+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=check_errors, task_id=check_value_for, execution_date=20240323T072028, start_date=20240323T103621, end_date=20240323T103622
+[2024-03-23T10:36:23.020+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-23T10:36:23.052+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

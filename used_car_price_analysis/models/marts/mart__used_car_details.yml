@@ -1,0 +1,53 @@
+models:
+  - name: mart__used_car_details
+    description: "The Used car details"
+    columns:
+      - name: make
+        data_type: string
+        description: "{{  doc('make') }}"
+        tests:
+          - not_null
+
+      - name: model
+        data_type: string
+        description: "{{  doc('model') }}"
+        tests:
+          - not_null
+        
+
+      - name: body_type
+        data_type: string
+        description: "{{  doc('body_type')  }}"
+        tests:
+          - not_null
+
+      - name: transmission
+        data_type: string
+        description: "{{  doc('transmission') }}"
+        tests:
+          - not_null
+
+      - name: odometer
+        data_type: float64
+        description: "{{  doc('odometer') }}"
+        tests:
+          - not_null
+
+      - name: color
+        data_type: string
+        description: "{{  doc('color')  }}"
+        tests:
+          - not_null
+
+      - name: interior_color
+        data_type: string
+        description: "{{  doc('interior') }}"
+        tests:
+          - not_null
+
+      - name: manufactured_year
+        data_type: int64
+        description: "{{  doc('manufactured_year')}}"
+        tests:
+          - not_null
+

@@ -1,0 +1,84 @@
+version: 2 
+
+models:
+  - name: stg__used_car_price
+    description: "The staging layer of the used car price in 2014 & 2015"
+    columns:
+      - name: manufactured_year
+        data_type: int64
+        description: "{{ doc('manufactured_year') }}"
+
+      - name: make
+        data_type: stringss
+        description: "{{ doc('make') }}"
+
+      - name: model
+        data_type: string
+        description: "{{ doc('model') }}"
+
+      - name: additional_design
+        data_type: string
+        description: "{{ doc('additional_design') }}"
+
+      - name: body_type
+        data_type: string
+        description: "{{ doc('body_type') }}"
+
+      - name: transmission
+        data_type: string
+        description: "{{ doc('transmission') }}"
+
+      - name: vechicle_id_number
+        data_type: string
+        description: "{{ doc('vechicle_id_number') }}"
+        tests:
+          - not_null
+        
+
+      - name: state
+        data_type: string
+        description: "{{ doc('state') }}"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg__state_abbrivation')
+              field: state_abbrivation
+
+      - name: condition
+        data_type: float64
+        description: "{{ doc('condition') }}"
+
+      - name: odometer
+        data_type: float64
+        description: "{{ doc('odometer') }}"
+
+      - name: color
+        data_type: string
+        description: "{{ doc('color') }}"
+
+      - name: interior
+        data_type: string
+        description: "{{ doc('interior') }}"
+
+      - name: seller
+        data_type: string
+        description: "{{ doc('seller') }}"
+        tests:
+          - not_null 
+
+
+      - name: manheim_market_report
+        data_type: float64
+        description: "{{ doc('manheim_market_report') }}"
+
+      - name: sellingprice
+        data_type: float64
+        description: "{{ doc('sellingprice') }}"
+        tests:
+          - not_null 
+        
+      - name: saledate
+        data_type: timestamp
+        description: "{{ doc('saledate') }}"
+        tests: 
+          - not_null
