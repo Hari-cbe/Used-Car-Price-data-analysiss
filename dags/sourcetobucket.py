@@ -2,23 +2,20 @@
 # Python Packages
 import pendulum
 import os
-import requests
 import pandas as pd
 import logging
 
 # Opearatos and provides for gcp 
 from airflow.decorators import dag, task 
 from airflow.operators.bash import BashOperator
-from airflow.exceptions import AirflowException
 from airflow.operators.python import PythonOperator
-from airflow.utils.trigger_rule import TriggerRule
 from airflow.providers.google.cloud.transfers.local_to_gcs import LocalFilesystemToGCSOperator
 from airflow.providers.google.cloud.operators.bigquery import BigQueryCheckOperator
 from airflow.providers.google.cloud.transfers.gcs_to_bigquery import GCSToBigQueryOperator
 from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateEmptyTableOperator,IfExistAction
 
 
-# Change this value for your use 
+# Change this Global values 
 BUCKET = "used-car-price-analysis"
 GCP_CONN_ID = "gcp_airflow_conn"
 DATASET_NAME = "used_car_analysis_dataset"
@@ -37,15 +34,26 @@ def source_to_gcs():
     @task()
     def get_data_from_source():
         car_sales_csv = pd.read_csv("https://github.com/Hari-cbe/Random-resourses/raw/main/Used-car-price-data/car_sales.csv"
-                                    ,delimiter=',')
-        car_sales_csv.to_csv('./data/car_sales.csv')
+                                    ,delimiter=',') 
+        
+        # Create a Data folder outside the dags folder and bind volumns in Docker-compose.yaml file 
+        # volumes:
+        #  ~/Your-project-folder/LOCAL_FOLDER_NAME:/opt/airflow/FOLDER_NAME 
+        
+        # This is will create a local csv file 
+
+        car_sales_csv.to_csv(os.path.join('data','car_sales.csv'),header=False,index=False)
+        logging.info("inserted car_sales.csv...")
 
         state_abb_data_csv = pd.read_csv("https://raw.githubusercontent.com/Hari-cbe/Random-resourses/main/Used-car-price-data/data_raw_state_abbrivation.csv"
                                         ,delimiter=',')
-        state_abb_data_csv.to_csv('./data/state_abb.csv')
+        state_abb_data_csv.to_csv(os.path.join('data','state_abb.csv'),header=False,index=False)
+
+        logging.info("inserted state_abb.csv data...")
+
 
     @task()
-    def upload_local_files(**kwargs):
+    def upload_local_files():
         data_folder = "data/"   
         gcs_path = "data/raw"
         
@@ -65,8 +73,9 @@ def source_to_gcs():
                 bucket=BUCKET,
                 gcp_conn_id=GCP_CONN_ID
             )
-            
-        upload_task.execute(context=None) 
+
+            upload_task.execute(context=None) 
+            logging.info(f"Uploaded file {local_file_path}")
 
 
     def run_bigquery_check_for_car_price_table():
@@ -78,12 +87,11 @@ def source_to_gcs():
             )
 
             try:
-        # Execute the task
                 check_bq_car_price.execute(context={})
                 # If the check passes (no exception raised)
                 return "CAR_PRICE_TABLE_is_found"
             except Exception as e:
-        # Log the exception if something goes wrong
+                # Log the exception if something goes wrong
                 logging.error(f"BigQuery check failed: {str(e)}") 
                 return "CAR_PRICE_TABLE_not_found"
 
@@ -104,13 +112,12 @@ def source_to_gcs():
 
         try:
             check_value.execute(context={})
-        # If the check passes (no exception raised)
+            # If the check passes (no exception raised)
             return "STATE_ABB_TABLE_is_found"
 
         except Exception as e:
-        # If the check fails
-            logging.error(f"BigQuery check failed: {str(e)}") 
-
+            # Log the exception if something goes wrong
+            logging.error(f"BigQuery check failed: {str(e)}")
             return "STATE_ABB_TABLE_not_found"
             
     get_result_state_abb_table = PythonOperator(
@@ -118,7 +125,7 @@ def source_to_gcs():
         python_callable=run_bigquery_check_for_state_abb_table
     )
 
-    # Branching based on check result (approach 2)
+    # Branching based on choose_task() 
     @task.branch
     def choose_task(**kwargs):
         ti = kwargs['ti']
@@ -126,7 +133,7 @@ def source_to_gcs():
         state_abb_result = ti.xcom_pull(task_ids="get_result_state_abb_table")
 
         if car_price_result == "CAR_PRICE_TABLE_is_found" and state_abb_result == "STATE_ABB_TABLE_is_found":
-            return "test_branch"
+            return "end_airflow"
         elif car_price_result == "CAR_PRICE_TABLE_not_found" and state_abb_result == "STATE_ABB_TABLE_is_found":
             return "create_BQ_table_car_price"
         elif car_price_result == "CAR_PRICE_TABLE_is_found" and state_abb_result == "STATE_ABB_TABLE_is_found":
@@ -171,9 +178,9 @@ def source_to_gcs():
         trigger_rule='none_failed_min_one_success'
     )
 
-    test_bash = BashOperator(
-        task_id = "test_branch",
-        bash_command="echo Branching..."
+    end_airflow = BashOperator(
+        task_id = "end_airflow",
+        bash_command="echo Pipeline ended..."
     )
 
     # calling operations
@@ -194,10 +201,12 @@ def source_to_gcs():
     insert_data_bigQuery_state_abb = insert_data_bigQuery_state_abb
 
 
-    test_branching = test_bash
+    test_branching = end_airflow
 
 
     get_data_from_source >> upload_local_files >> get_result_car_price_table >> get_result_state_abb_table  >> choose_task >> [ create_table_BQ_car_price, create_table_BQ_state_abb , test_branching ]
+    
+    # if Branching operator returns create_table_BQ_car_price, create_table_BQ_state_abb this works
     create_table_BQ_car_price >> insert_data_bigQuery_car_price
     create_table_BQ_state_abb >> insert_data_bigQuery_state_abb
 

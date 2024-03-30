@@ -1,5 +1,7 @@
 from airflow.decorators import dag, task
 import pendulum
+import os
+import logging 
 
 from airflow.operators.python import PythonOperator
 
@@ -14,9 +16,11 @@ def test_airflow():
 
     @task()
     def check():
-        print("Hello Mom!, Iam there")
 
-    task1 = check()
+        logging.info(os.listdir(os.getcwd()))
+        os.makedirs('./data2')    
+
+    check()
 
 test = test_airflow()
 
