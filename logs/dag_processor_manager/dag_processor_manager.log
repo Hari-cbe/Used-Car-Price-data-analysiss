@@ -84862,3 +84862,29 @@ File Path                            PID    Runtime      # DAGs    # Errors  Las
 /opt/airflow/dags/sourcetobucket.py                           1           0  0.51s           2024-03-30T04:38:47
 /opt/airflow/dags/test_airflow.py                             1           0  0.22s           2024-03-30T04:38:58
 ================================================================================
+[2024-03-30T04:39:34.031+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_airflow.py                             1           0  0.27s           2024-03-30T04:39:29
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.22s           2024-03-30T04:39:17
+================================================================================
+[2024-03-30T04:39:49.732+0000] {manager.py:1129} WARNING - Skipping processing of missing file: /opt/airflow/dags/test_airflow.py
+[2024-03-30T04:40:04.276+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.60s           2024-03-30T04:39:48
+================================================================================
+[2024-03-30T04:40:34.444+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/sourcetobucket.py                           1           0  0.81s           2024-03-30T04:40:19
+================================================================================
