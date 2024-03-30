@@ -126,7 +126,7 @@ def source_to_gcs():
     )
 
     # Branching based on choose_task() 
-    @task.branch
+    @task.branch(do_xcom_push=False)
     def choose_task(**kwargs):
         ti = kwargs['ti']
         car_price_result = ti.xcom_pull(task_ids="get_result_car_price_table")
