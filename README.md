@@ -7,7 +7,7 @@
    This project aims to analyze data related to used car prices to derive insights that can aid in understanding the factors influencing car prices in the secondary market.
 </p>
 
-<h2><img src="https://cdn-icons-png.flaticon.com/128/6293/6293965.png" width="20"> Overview </h2>
+<h2><img src="https://cdn-icons-png.flaticon.com/128/1150/1150643.png" width="20"> Overview </h2>
 
 This is final project for the **[DataTalks Data Engineering zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp)**. 
 In which I have made a end-to-end pipeline 
@@ -16,7 +16,7 @@ In which I have made a end-to-end pipeline
 - Visualize using the looker studio 
 <hr>
 
-<h2><img src="https://cdn-icons-png.flaticon.com/128/1694/1694262.png" width="20"> Motivation </h2>
+<h2><img src="https://cdn-icons-png.flaticon.com/128/3066/3066169.png" width="25"> Motivation </h2>
 <p> The motivation for this project is to find trend of the second hand car market in the US. The second-hand car market offers affordability, sustainability, and community engagement, providing access to quality vehicles at lower prices while reducing waste and promoting resourcefulness in transportation choices.
 
 This analyis will help the people to find solutions for 
@@ -29,14 +29,14 @@ These are some of the examples this analysis will answer.
 </p>
 
 ---
-<h2> <img src="https://cdn-icons-png.flaticon.com/128/1664/1664210.png" width="20"> Architectural diagram </h2>
+<h2> <img src="https://cdn-icons-png.flaticon.com/128/4043/4043312.png" width="20"> Architectural diagram </h2>
 <img src="https://github.com/Hari-cbe/Random-resourses/blob/main/Used-car-price-data/images/Untitled%20Diagram.drawio.png?raw=true>">
 
 <h4> Architectural Explanition </h4>
 <p>Google Cloud Provider is being used for the cloud processing and cloud storage. In GCP Google's Compute Engine is being used for the Virtual Machine. So, We can work in different envirnoment</p> 
 First data is downloaded from a source file and stored in the local file system. Then from the local file system data is being moved to GCS using Aiflow. Then from the GCS data bigquery table is created, From the Big Query Table then transformed with the help of dbt( Data Build Tool ). Then Visualization is created with the help of transformed data 
 <hr>
-<h2> <img src="https://cdn-icons-png.flaticon.com/128/2287/2287893.png" width="20"> How to run the Project on your system</h2>
+<h2> <img src="https://cdn-icons-png.flaticon.com/128/10214/10214613.png" width="20"> How to run the Project on your system</h2>
 To run the project locally, on your system, you will need to install tools such as
 
 * **Google Cloud Provider** 
@@ -68,4 +68,5 @@ To run the project locally, on your system, you will need to install tools such 
 
 * Once you are done, you will see a visual similar to what is show below
 <img src="https://github.com/Hari-cbe/Random-resourses/blob/main/Used-car-price-data/images/US_used_car_price_Analysis_page-0001.jpg?raw=true">
+
 
