@@ -35,9 +35,7 @@ These are some of the examples this analysis will answer.
 <h4> Architectural Explanition </h4>
 <p>Google Cloud Provider is being used for the cloud processing and cloud storage. In GCP Google's Compute Engine is being used for the Virtual Machine. So, We can work in different envirnoment</p> 
 First data is downloaded from a source file and stored in the local file system. Then from the local file system data is being moved to GCS using Aiflow. Then from the GCS data bigquery table is created, From the Big Query Table then transformed with the help of dbt( Data Build Tool ). Then Visualization is created with the help of transformed data 
-
-
-
+<hr>
 <h2> <img src="https://cdn-icons-png.flaticon.com/128/2287/2287893.png" width="20"> How to run the Project on your system</h2>
 To run the project locally, on your system, you will need to install tools such as
 
@@ -58,24 +56,16 @@ To run the project locally, on your system, you will need to install tools such 
     <li>In your Code Editor( <a href="https://code.visualstudio.com/download">VS code</a> preferred ). Connect to the remote desktop.</li>
     <li>Use <code>docker pull haricbe/extending_airflow</code> to download the docker image</li>
     <li> Run the docker image <code>docker-compose up -d</code> to run the docker image in detach mdode </li>
-    <li> forward the port in vs code <b>8080</b> and use the <b>localhost:8080</b> to run airflow </li>  
-    
+    <li> forward the port in vs code <b>8080</b> and use the <b>localhost:8080</b> to run airflow in browser</li>  
+    <li>Run The Script </li>
+    <img src="https://github.com/Hari-cbe/Random-resourses/blob/main/Used-car-price-data/images/airflow.png?raw=true">
+    <li>Data has been uploaded into gcs and Big Table has been created</li>
+    <li>Install <a href="https://www.getdbt.com/">dbt Core</a> change the folder dir to used_car_price_analysis and run <code>dbt build</code> to run the transformations</li>
+    <li>Once dbt is finished building it will have the output</li>
+    <img src="https://github.com/Hari-cbe/Random-resourses/blob/main/Used-car-price-data/images/dbt.png?raw=true">
+    <li>Used the transformed data to visualize in the <b>looker studio</b></li>
 </ol>
 
-<h4>From <code>source</code></h4>
+* Once you are done, you will see a visual similar to what is show below
+<img src="https://github.com/Hari-cbe/Random-resourses/blob/main/Used-car-price-data/images/US_used_car_price_Analysis_page-0001.jpg?raw=true">
 
-> 1. Clone the Used-Car-Price-data-analysiss repository:
->
-> ```console
-> $ git clone https://github.com/Hari-cbe/Used-Car-Price-data-analysiss.git
-> ```
->
-> 2. Change to the project directory:
-> ```console
-> $ cd Used-Car-Price-data-analysiss
-> ```
->
-> 3. Install the dependencies:
-> ```console
-> $ pip install -r requirements.txt
-> ```
