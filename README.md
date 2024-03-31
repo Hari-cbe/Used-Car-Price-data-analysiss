@@ -30,63 +30,37 @@ These are some of the examples this analysis will answer.
 
 ---
 <h2> <img src="https://cdn-icons-png.flaticon.com/128/1664/1664210.png" width="20"> Architectural diagram </h2>
-<img src="https://github.com/Hari-cbe/Random-resourses/blob/main/Used-car-price-data/images/Untitled%20Diagram.drawio.png?raw=true>"
+<img src="https://github.com/Hari-cbe/Random-resourses/blob/main/Used-car-price-data/images/Untitled%20Diagram.drawio.png?raw=true>">
 
----
+<h4> Architectural Explanition </h4>
+<p>Google Cloud Provider is being used for the cloud processing and cloud storage. In GCP Google's Compute Engine is being used for the Virtual Machine. So, We can work in different envirnoment</p> 
+First data is downloaded from a source file and stored in the local file system. Then from the local file system data is being moved to GCS using Aiflow. Then from the GCS data bigquery table is created, From the Big Query Table then transformed with the help of dbt( Data Build Tool ). Then Visualization is created with the help of transformed data 
 
-##  Repository Structure
 
-```sh
-└── Used-Car-Price-data-analysiss/
-    ├── Dockerfile
-    ├── README.md
-    ├── dags
-    │   ├── __pycache__
-    │   └── sourcetobucket.py
-    ├── dbt-env
-    │   ├── bin
-    │   ├── lib
-    │   ├── lib64
-    │   ├── pyvenv.cfg
-    │   └── share
-    ├── docker-compose.yaml
-    ├── logs
-    │   ├── dag_id=check_errors
-    │   ├── dag_id=source_to_gcs
-    │   ├── dag_id=test_airflow
-    │   ├── dag_processor_manager
-    │   ├── dbt.log
-    │   └── scheduler
-    ├── requirements.txt
-    ├── terraform
-    │   ├── .terraform
-    │   ├── .terraform.lock.hcl
-    │   ├── main.tf
-    │   ├── terraform.tfstate
-    │   ├── terraform.tfstate.backup
-    │   └── variables.tf
-    └── used_car_price_analysis
-        ├── .gitignore
-        ├── analyses
-        ├── dbt_project.yml
-        ├── macros
-        ├── models
-        ├── package-lock.yml
-        ├── packages.yml
-        ├── seeds
-        ├── snapshots
-        └── tests
-```
 
----
+<h2> <img src="https://cdn-icons-png.flaticon.com/128/2287/2287893.png" width="20"> How to run the Project on your system</h2>
+To run the project locally, on your system, you will need to install tools such as
 
-##  Getting Started
+* **Google Cloud Provider** 
+* **Python**
+* **Terraform**
+* **Docker**
+* **Airflow**
+* **DBT**
 
-**Technologies used**
-
-* **Python**: `version x.y.z`
-
-###  Installation
+<h4> Steps </h4>
+<ol>
+    <li>Register a GCP account and create a project </li>
+    <li> Clone the project<code> $ git clone https://github.com/Hari-cbe/Used-Car-Price-data-analysiss.git </code></li>
+    <li>Change the terraform <b><em>variable.tf</em></b> file to your required credentials.</li>
+    <li>Use <code>terraform plan</code> to plan the project and use <code>terraform apply </code> in your terminal to create the necessary infrastructure in gcp  
+    <li>Login into the VM instance. Install <a href="https://www.python.org/">Python</a>, <a href="https://docs.docker.com/get-docker/">Docker</a></li>
+    <li>In your Code Editor( <a href="https://code.visualstudio.com/download">VS code</a> preferred ). Connect to the remote desktop.</li>
+    <li>Use <code>docker pull haricbe/extending_airflow</code> to download the docker image</li>
+    <li> Run the docker image <code>docker-compose up -d</code> to run the docker image in detach mdode </li>
+    <li> forward the port in vs code <b>8080</b> and use the <b>localhost:8080</b> to run airflow </li>  
+    
+</ol>
 
 <h4>From <code>source</code></h4>
 
@@ -105,88 +79,3 @@ These are some of the examples this analysis will answer.
 > ```console
 > $ pip install -r requirements.txt
 > ```
-
-###  Usage
-
-<h4>From <code>source</code></h4>
-
-> Run Used-Car-Price-data-analysiss using the command below:
-> ```console
-> $ python main.py
-> ```
-
-###  Tests
-
-> Run the test suite using the command below:
-> ```console
-> $ pytest
-> ```
-
----
-
-##  Project Roadmap
-
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
-
----
-
-##  Contributing
-
-Contributions are welcome! Here are several ways you can contribute:
-
-- **[Report Issues](https://github.com/Hari-cbe/Used-Car-Price-data-analysiss.git/issues)**: Submit bugs found or log feature requests for the `Used-Car-Price-data-analysiss` project.
-- **[Submit Pull Requests](https://github.com/Hari-cbe/Used-Car-Price-data-analysiss.git/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github.com/Hari-cbe/Used-Car-Price-data-analysiss.git/discussions)**: Share your insights, provide feedback, or ask questions.
-
-<details closed>
-<summary>Contributing Guidelines</summary>
-
-1. **Fork the Repository**: Start by forking the project repository to your github account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
-   ```sh
-   git clone https://github.com/Hari-cbe/Used-Car-Price-data-analysiss.git
-   ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
-   ```sh
-   git checkout -b new-feature-x
-   ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
-   ```sh
-   git commit -m 'Implemented new feature x.'
-   ```
-6. **Push to github**: Push the changes to your forked repository.
-   ```sh
-   git push origin new-feature-x
-   ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
-8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
-</details>
-
-<details closed>
-<summary>Contributor Graph</summary>
-<br>
-<p align="center">
-   <a href="https://github.com{/Hari-cbe/Used-Car-Price-data-analysiss.git/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=Hari-cbe/Used-Car-Price-data-analysiss.git">
-   </a>
-</p>
-</details>
-
----
-
-##  License
-
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
-##  Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
-
-[**Return**](#-overview)
-
----
